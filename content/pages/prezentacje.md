@@ -3,6 +3,15 @@ Title: Prezentacje
 Poniżej znajduje się (niekompletne) archiwum prezentacji goszczonych
 do tej pory w ramach Linu.X-labu:
 
-- 2016-10-23: [Wprowadzenie do Bitcoinów][1], Paweł Kraszewski
+- 2014-09-26: [Wprowadzenie do Emacs org-mode][1] ([source][2]), Wojciech 'vifon' Siewierski
+- 2015-05-29: [Warsztaty z programowania w Go, cz. 1][3], Paweł Kraszewski
+- 2015-07-17: [Warsztaty z programowania w Go, cz. 2][4], Paweł Kraszewski
+- 2016-03-04: [Warsztaty z Erlanga][5], Paweł Kraszewski
+- 2016-10-23: [Wprowadzenie do Bitcoinów][6], Paweł Kraszewski
 
-[1]: {filename}/static/BitCoin%20prezentacja.pdf
+[1]: {filename}/static/slideshows/org-mode/org-mode.html
+[2]: {filename}/static/slideshows/org-mode/org-mode.org
+[3]: https://github.com/p-kraszewski/linux-w-bramie/tree/master/2015-05-29-Go
+[4]: https://github.com/p-kraszewski/linux-w-bramie/tree/master/2015-07-17-Go
+[5]: https://github.com/p-kraszewski/LwB-20160304-Erlang
+[6]: {filename}/static/BitCoin%20prezentacja.pdf

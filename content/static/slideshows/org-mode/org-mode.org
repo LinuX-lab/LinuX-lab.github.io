@@ -1,0 +1,302 @@
+# -*- org -*-
+#+REVEAL_TRANS: default
+#+OPTIONS: num:nil
+
+* Czym jest /org-mode/?
+
+  /org-mode/ jest (między innymi) zaawansowanym systemem zarządzania
+  zadaniami i czasem. \\
+  Wyróżnia go przechowywanie wszystkiego w formie tekstu (bez
+  binarnych formatów) przy zachowaniu dużych możliwości. Może też być
+  wykorzystywany jako język do markupu (ta prezentacja została właśnie
+  w nim wykonana).
+
+#+REVEAL: split
+
+  /org-mode/ jest częścią /GNU Emacsa/ i działa wewnątrz niego, ale
+#+ATTR_REVEAL: :frag highlight-red
+  nie wymaga znajomości jego obsługi poza niezbędnym minimum. \\
+#+ATTR_REVEAL: :frag nil
+  Jeśli ktoś już używa Emacsa do innych zadań, to tym lepiej. Jeśli
+  nie, mimo wszystko warto się zapoznać z /org-mode/. \\
+#+ATTR_REVEAL: :frag roll-in
+  Do szeroko pojętego /todo/ i tak prawdopodobnie musielibyśmy
+  skorzystać z oddzielnego programu, więc sugerowałbym tutaj
+  potraktować Emacsa jako środowisko uruchomieniowe, a sam /org-mode/
+  jak program.
+
+** Dostosowanie Emacsa dla początkujących
+
+   Żeby wygodnie edytować pliki /org-mode/ w Emacsie, najlepiej
+   włączyć =cua-mode= udostępniający skróty takie, jak ctrl+c, ctrl+v
+   (Emacs jest starszy niż powszechne dziś skróty klawiszowe i jego
+   domyślna klawiszologia może wydać się obca).
+
+#+ATTR_REVEAL: :frag t
+   =M-x cua-mode=
+
+* Lista zadań
+
+  Najprostszą (chciaż nie podstawową) strukturą używaną przez /org-mode/ jest lista.
+
+#+begin_src org
+  - wyprowadzić psa
+  - zrobić zakupy
+    - kupić mleko
+    - kupić chleb
+  - prace domowe
+    - zrobić pranie
+    - umyć naczynia
+    - odebrać pocztę
+#+end_src
+
+  Klawisze:
+  - nowa pozycja :: =M-Enter=
+  - wcięcie pozycji :: =M-Right=
+  - cofnięcie wcięcia :: =M-Left=
+
+** Lista z "ptaszkami"
+
+   Niewielkim wysiłkiem można naszą listę wzbogacić o "ptaszki".
+   Wystarczy dodać ~[ ]~.
+
+#+begin_src org
+  - [ ] wyprowadzić psa
+  - [2/2] zrobić zakupy
+    - [X] kupić mleko
+    - [X] kupić chleb
+  - [33%] prace domowe
+    - [ ] zrobić pranie
+    - [X] umyć naczynia
+    - [ ] odebrać pocztę
+#+end_src
+
+   Jeśli wewnątrz ~[ ]~ umieścimy ~/~ bądź ~%~, to otrzymamy
+   podsumowanie wszystkich podzadań w jednym z dwóch formatów. Jeśli
+   pozostawimy pusty nawias w elemencie-rodzicu, zaznaczy się on sam
+   gdy wykonane zostaną zadania potomne.
+
+   Nowy element listy będący zadaniem do wykonania wstawiamy
+   ~M-S-Enter~.
+
+#+REVEAL: split
+
+   Pól nie musimy zaznaczać ręcznie. Można je zaznaczać i odznaczać
+   skrótem =C-c C-c= -- podwójnym wciśnięciem ctrl+c
+
+#+ATTR_REVEAL: :frag roll-in
+   Warto jednak pamiętać, że wszystko to nadal jest zwykłym tekstem i
+   możemy poprawki nanieść ręcznie, jeśli przyjdzie taka potrzeba.
+
+* Nagłówki (ang. heading)
+
+  Prawdziwym sercem /org-mode/ są, podobne do list, ale dużo
+  potężniejsze, nagłówki.
+
+#+begin_src org
+  ,* nagłówek
+  ,** podnagłówek
+  ,** drugi podnagłówek
+     tekst należący do drugiego podnagłówka
+  ,** trzeci podnagłówek
+  ,* drugi nagłowek
+#+end_src
+
+  Nagłówki mogą być dowolnie głęboko zagnieżdżane. \\
+  Pierwsza ważna różnica między nagłówkami a listami, to domyślny stan
+  "zwinięcia". Gdy otworzymy istniejący plik .org, zobaczymy tylko
+  nagłówki najwyższego poziomu, które możemy rozwinąć wciskając =Tab=.
+
+#+REVEAL: split
+
+  Nagłówek może zawierać w sobie dowolne inne struktury /org-mode/,
+  np. listy.
+
+#+begin_src org
+  ,* nagłówek
+  ,** podnagłówek
+     - lista
+     - lista cd.
+     - [ ] nadal lista
+#+end_src
+
+  Nagłówki wstawiamy i manipulujemy nimi tak samo, jak było z
+  elementami listy: =M-Enter= etc.
+
+* Nagłówki zadań
+
+  Do tej pory przedstawione check-listy pozwalają oznaczać listę
+  wykonanych i niewykonanych zadań, ale niewiele ponad to. Jeśli
+  chcemy większych możliwości, możemy zrealizować listę zadań przy
+  pomocy nagłówków.
+
+#+begin_src org
+  ,* TODO wyprowadzić psa
+  ,* [2/2] zrobić zakupy
+  ,** DONE kupić mleko
+  ,** DONE kupić chleb
+  ,* [33%] prace domowe
+  ,** TODO zrobić pranie
+  ,** DONE umyć naczynia
+  ,** TODO odebrać pocztę
+#+end_src
+
+  Jak można zauważyć, zamiast kratek z 'X', stosujemy słowa kluczowe
+  "TODO" i "DONE". Ich stan zmienia się dość rozwlekłą kombinacją =C-c
+  C-t=. Może się to wydawać nieczytelne i niewygodne, ale taka forma
+  jest dużo bardziej konfigurowalna.
+
+  Nagłówek typu TODO wstawiamy analogicznie jak w przypadku list:
+  =M-S-Enter=
+
+** Modyfikacja listy stanów zadań
+
+   Domyślnie zadanie może znajdować się w dwóch stanach: TODO albo
+   DONE. Listę tę można dowolnie zmodyfikować linią zaczynającą się od
+   "#+TODO:". Osobiście stosuję następującą listę:
+#+ATTR_REVEAL: :frag roll-in
+#+begin_src org
+  ,#+TODO: TODO(t) MAYBE(m) | WAITING(w@) DONE(d!/@) ABORTED(a@/@)
+#+end_src
+
+#+ATTR_REVEAL: :frag roll-in
+   Stany przed pionową kreską są uznawane za nieukończone, a stany za
+   nią -- za ukończone. Litery w nawiasach oznaczają klawisze skrótu
+   (wciskane po =C-c C-t=), które ustawiają dany stan.
+
+#+REVEAL: split
+
+#+begin_src org
+  ,#+TODO: TODO(t) MAYBE(m) | WAITING(w@) DONE(d!/@) ABORTED(a@/@)
+#+end_src
+   Za literami stoją przy niektórych stanach specjalne flagi. \\
+#+ATTR_REVEAL: :frag roll-in
+   Wykrzyknik oznacza, że chcemy, żeby została zalogowana data i
+   godzina ustawienia takiego stanu (czyli np. informacja, kiedy
+   ukończyliśmy dane zadanie). \\
+#+ATTR_REVEAL: :frag roll-in
+   Małpa oznacza to samo, a ponad to poprosi nas o komentarz do zmiany
+   (np. informacja, dlaczego rezygnujemy z zadania albo na co
+   oczekujemy). \\
+#+ATTR_REVEAL: :frag roll-in
+   Slash mówi, że chcemy flagę za nim stojącą zastosować do stanu, do
+   którego przejdziemy z tego stanu, jeśli to zrobimy (np. dlaczego
+   jednak uznaliśmy zadanie za niedokończone).
+
+** Filtrowanie TODO
+
+   Jeśli chcemy wyświetlić wszystkie zadania, które wymagają uwagi,
+   możemy wcisnąć =C-c / t=. Włącza to funkcję zwaną w ogólności
+   /sparse tree/. W tym przypadku ogranicza widoczne nagłówki do zadań
+   oczekujących na wykonanie.
+
+** Śledzenie czasu
+
+   Jeśli pracujemy nad jakimś zadaniem dłużej, możemy chcieć
+   zapisywać, kiedy i jak długo nad nim pracowaliśmy.
+
+#+ATTR_REVEAL: :frag roll-in
+   Takie informacje możemy przypisać do nagłowka. Aby oznaczyć
+   rozpoczęcie pracy nad zadaniem, wciskamy =C-c C-x C-i=. Gdy skończymy
+   pracować, wciskamy =C-c C-x C-o=. Potem można, na przykład, z tak
+   zapisanego czasu pracy wygenerować raport w formie tabelki.
+
+* Zadania a pliki, cz.1: załączniki
+
+  Zdarza się, że wykonywane zadanie dotyczy jakichś plików
+  zewnętrznych. /org-mode/ umożliwia powiązanie tych plików z zadaniem
+  na kilka sposobów. Pierwszym z nich są załączniki.
+
+#+REVEAL: split
+
+  Skrótem =C-c C-a= otwieramy menu operacji na załącznikach. Wciskając
+  'm' wybieramy opcję przeniesienia pliku z innego miejsca. Jest też
+  opcja kopiowania bądź skorzystania z symlinków lub hardlinków.
+
+#+ATTR_REVEAL: :frag roll-in
+  Od tego momentu mamy dostęp do tych plików z poziomu zadania, a
+  pliki znajdują w jednym dedykowanym miejscu, więc nam się nie
+  zgubią.
+
+#+ATTR_REVEAL: :frag roll-in
+  Wszystkie przydatne operacje na załącznikach są dostępne w menu
+  wspomnianym wcześniej.
+
+* Zadania a pliki, cz.2: odnośniki
+
+  Drugim sposobem na powiązanie plików (i nie tylko) z zadaniem jest
+  użycie odnośników.
+
+#+ATTR_REVEAL: :frag roll-in
+  Odnośnik może wskazywać nie tylko na pliki, ale też na strony
+  internetowe, inne nagłówki /org-mode/, emaile, a nawet kod
+  wykonywalny.
+
+#+ATTR_REVEAL: :frag roll-in
+  Odnośnik tworzymy klawiszami =C-c C-l=. Tak samo też edytujemy.
+  Otwarcie odnośnika umoźliwia skrót =C-c C-o=.
+
+#+REVEAL: split
+
+  Odnośniki można w praktyce zastosować np. do tworzenia notatek do
+  analizowanego kodu. Odnośnik do pliku może określać nam nie tylko
+  plik, ale i linię, a więc możemy tworzyć komentarze do wybranych
+  linii bez modyfikacji samych plików z kodem.
+
+* Przykład (uproszczony z życia wzięty)
+
+  Załóżmy, że zamówiliśmy nowy telefon z Androidem i planujemy go
+  zrootować od razu jak do nas dotrze. \\
+#+ATTR_REVEAL: :frag roll-in
+  Możemy utworzyć zadanie "Zamówić i zrootować telefon", ustawić mu
+  stan WAITING, dodać jako załączniki wszystkie pliki, które będą nam
+  potrzebne do rootowania telefonu (zakładając, że przygotujemy je
+  sobie zawczasu), a na koniec dodamy odnośnik do strony z
+  przewodnikiem jak się za nie zabrać. \\
+#+ATTR_REVEAL: :frag roll-in
+  W międzyczasie możemy gdzieś w ramach tego samego nagłówka zanotować
+  numer przewozowy przesyłki z telefonem, a nawet zrobić z niego
+  odnośnik czy to do maila, w którym go dostaliśmy, czy to do strony
+  gdzie możemy śledzić przesyłkę.
+
+#+REVEAL: split
+
+  Tym sposobem, mamy zgromadzone w jednym miejscu wszystkie informacje
+  i materiały dotyczące tego zadania. Dzięki temu możemy skupić się na
+  realizacji planów, a nie na szukaniu skrawków zadania po dysku.
+
+* Inne zastosowania /org-mode/
+
+  Tak jak wspomniałem, /org-mode/ ma też kilka innych zastosowań. \\
+  Tym razem już bez przykładów zastosowania, żeby nie przerazić.
+
+** Dokumenty i prezentacje
+
+   Plik .org można wyeksportować do bardzo wielu formatów. Od LaTeX-a,
+   przez HTML po widoczną tu prezentację. Wręcz można używać wielu
+   symboli LaTeX-a (np. \Omega możemy zapisać ~\Omega~) bezpośrednio w
+   pliku .org. \\
+   Dzięki temu, znając chciażby częściowo format /org-mode/, często
+   nie musimy się uczyć innych formatów.
+
+** org-capture
+
+   /org-capture/ jest wygodnym mechanizmem tworzenia konfigurowalnych
+   notatek w trakcie wykonywania dowolnej innej pracy w Emacsie.
+   Docenią przede wszystkim dotychczasowi użytkownicy Emacsa.
+
+** org-agenda
+
+   /org-agenda/ agreguje i wyświetla w przystępny sposób wszystkie
+   zaplanowane zadania, żeby ułatwić wybór co powinno zostać zrobione
+   pierwsze. Ich posortowanie jest głównie chronologiczne, ale zależy
+   też od czynników takich jak ustawiony priorytet czy zbliżający się
+   deadline.
+
+** Arkusze kalkulacyjne (sic!)
+
+   Zgadza się, /org-mode/ zawiera opcję tworzenia arkuszy
+   kalkulacyjnych. One również są zapisywane w formacie tekstowym, a
+   więc można je odczytać (choć o "inteligentnej" edycji nie może być
+   mowy) dowolnym edytorem. Są zadziwiająco rozbudowane i są świetnym
+   pokazem "siły" tego pakietu.

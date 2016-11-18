@@ -13,6 +13,8 @@ SLUGIFY_SOURCE = 'title'
 
 STATIC_PATHS = ['images', 'static']
 
+READERS = {'html': None}
+
 MD_EXTENSIONS = [
     'codehilite(css_class=highlight)',
     'extra',
