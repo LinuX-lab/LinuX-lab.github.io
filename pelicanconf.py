@@ -13,6 +13,12 @@ SLUGIFY_SOURCE = 'title'
 
 STATIC_PATHS = ['images', 'static']
 
+MD_EXTENSIONS = [
+    'codehilite(css_class=highlight)',
+    'extra',
+    'smarty',
+]
+
 PATH = 'content'
 
 TIMEZONE = 'Europe/Warsaw'
