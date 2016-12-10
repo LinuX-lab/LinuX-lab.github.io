@@ -43,6 +43,7 @@ AUTHOR_FEED_RSS = None
 # Social widget
 # SOCIAL = (('You can add links in your config file', '#'),
 #           ('Another social link', '#'),)
+SOCIAL = (('Lista mailingowa', 'http://lwb.waw.pl/cgi-bin/mailman/listinfo/lwb'),)
 
 # DEFAULT_PAGINATION = False
 
