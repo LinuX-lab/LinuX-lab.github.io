@@ -2,9 +2,9 @@ Title: Luty 2017
 Date: 2017-02-02 23:35
 Author: Wojciech 'vifon' Siewierski
 
-Lutowe spotkanie odbędzie się już za tydzień, 10 lutego. Mam nadzieję,
-że większość zainteresowanych będzie już po mniej lub bardziej udanej
-sesji egzaminacyjnej.
+Lutowe spotkanie odbędzie się już za tydzień, 10. lutego. Mam
+nadzieję, że większość zainteresowanych będzie już po mniej lub
+bardziej udanej sesji egzaminacyjnej.
 
 Na samym spotkaniu spodziewajcie się pogadanki na temat U2F czyli
 dedykowanych urządzeń do wieloskładnikowej autoryzacji. Co to jest, do
