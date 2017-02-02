@@ -1,8 +1,20 @@
 Title: O nas
 
-*Linu.X-lab* (do 2015 znany jako *Linux w BRAMIE*) to odbywające się cyklicznie zwykle w każdy pierwszy piątek miesiąca spotkania miłośników, fascynatów i wszystkich innych ludzi zainteresowanych Wolnym i Otwartym Oprogramowaniem. Podczas spotkań można porozmawiać oraz wymienić się wiedzą z innymi osobami, które dzielą razem z Tobą zainteresowanie tymi tematami.
+*Linu.X-lab* (do 2015 znany jako *Linux w BRAMIE*) to odbywające się cyklicznie zwykle w każdy pierwszy* piątek miesiąca spotkania miłośników, fascynatów i wszystkich innych ludzi zainteresowanych Wolnym i Otwartym Oprogramowaniem. Podczas spotkań można porozmawiać oraz wymienić się wiedzą z innymi osobami, które dzielą razem z Tobą zainteresowanie tymi tematami.
 
-Gorąco zapraszamy na nasze spotkania również wszystkich, którzy o Linuksie nic nie wiedzą i dopiero chcieli by zacząć swoją przygodę z tym systemem operacyjnym. Podczas spotkań można zdobyć odpowiedzi na nurtujące Cię pytania albo pomoc przy rozwiązywaniu wszelkich problemów związanych z instalacją, konfiguracją lub administracją Wolnym i Otwartym Oprogramowaniem.
+*) plus/minus tydzień
+
+Od samego początku istnienia tych spotkań celem była organizacja
+przestrzeni, w której początkujący mogliby znaleźć pomoc osób bardziej
+doświadczonych. Gorąco zapraszamy na nasze spotkania wszystkich,
+którzy o Linuksie nic nie wiedzą i dopiero chcieli by zacząć swoją
+przygodę z tym systemem operacyjnym. Podczas spotkań można zdobyć
+odpowiedzi na nurtujące pytania czy otrzymać pomoc przy rozwiązywaniu
+wszelkich problemów związanych z instalacją, konfiguracją lub
+administracją Wolnym i Otwartym Oprogramowaniem.
+
+Nierzadko prezentacje są jedynie luźno powiązane z Linuksem jednakże
+staramy się by były one ciekawe i możliwie praktyczne.
 
 Jak do nas trafić:  
 *Politechnika Warszawska, Wydział Elektroniki i Technik Informacyjnych  
