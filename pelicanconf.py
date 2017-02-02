@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = "Wojciech 'vifon' Siewierski"
-SITENAME = 'Linu.X-lab (dawniej Linux w BRAMIE)'
+SITENAME = 'Linu.X-lab'
 SITEURL = ''
 
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
