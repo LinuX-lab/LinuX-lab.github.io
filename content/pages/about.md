@@ -24,4 +24,4 @@ ul. Nowowiejska 15/19, X-lab.PW (pokój 039, piwnica)*
 Zespół:
 
 - Wojciech 'vifon' Siewierski --- organizacja
-- dr inż. Piotr Szotkowski --- opiekun
+- mgr inż. Konrad Grochowski --- opiekun
