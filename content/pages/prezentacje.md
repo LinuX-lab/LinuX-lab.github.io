@@ -9,8 +9,8 @@ do tej pory w ramach Linu.X-labu:
 - 2016-03-04: [Warsztaty z Erlanga][5], Paweł Kraszewski
 - 2016-10-23: [Wprowadzenie do Bitcoinów][6], Paweł Kraszewski
 
-[1]: {filename}/static/slideshows/org-mode/org-mode.html
-[2]: {filename}/static/slideshows/org-mode/org-mode.org
+[1]: {filename}/static/org-mode/org-mode.html
+[2]: {filename}/static/org-mode/org-mode.org
 [3]: https://github.com/p-kraszewski/linux-w-bramie/tree/master/2015-05-29-Go
 [4]: https://github.com/p-kraszewski/linux-w-bramie/tree/master/2015-07-17-Go
 [5]: https://github.com/p-kraszewski/LwB-20160304-Erlang
