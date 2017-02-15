@@ -12,6 +12,7 @@ ARTICLE_SAVE_AS = ARTICLE_URL
 SLUGIFY_SOURCE = 'title'
 
 STATIC_PATHS = ['images', 'static']
+ARTICLE_EXCLUDES = ['static']
 
 READERS = {'html': None}
 
