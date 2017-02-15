@@ -10,11 +10,11 @@ do tej pory w ramach Linu.X-labu:
 - 2016-10-23: [Wprowadzenie do Bitcoinów][6], Paweł Kraszewski
 - 2017-01-20: [Curiously recurring template pattern][7] oraz [Template-parameter dependent name][8] (powtórka z [Warsaw C++ Users Group](http://cpp.mimuw.edu.pl/)), Adam Mizerski
 
-[1]: {filename}/static/org-mode/org-mode.html
-[2]: {filename}/static/org-mode/org-mode.org
+[1]: {filename}/static/slideshows/org-mode/org-mode.html
+[2]: {filename}/static/slideshows/org-mode/org-mode.org
 [3]: https://github.com/p-kraszewski/linux-w-bramie/tree/master/2015-05-29-Go
 [4]: https://github.com/p-kraszewski/linux-w-bramie/tree/master/2015-07-17-Go
 [5]: https://github.com/p-kraszewski/LwB-20160304-Erlang
-[6]: {filename}/static/BitCoin%20prezentacja.pdf
-[7]: {filename}/static/crtp.pdf
-[8]: {filename}/static/template-parameter.pdf
+[6]: {filename}/static/slideshows/BitCoin%20prezentacja.pdf
+[7]: {filename}/static/slideshows/crtp.pdf
+[8]: {filename}/static/slideshows/template-parameter.pdf
