@@ -9,6 +9,7 @@ do tej pory w ramach Linu.X-labu:
 - 2016-03-04: [Warsztaty z Erlanga][5], Paweł Kraszewski
 - 2016-10-23: [Wprowadzenie do Bitcoinów][6], Paweł Kraszewski
 - 2017-01-20: [Curiously recurring template pattern][7] oraz [Template-parameter dependent name][8] (powtórka z [Warsaw C++ Users Group](http://cpp.mimuw.edu.pl/)), Adam Mizerski
+- 2017-02-10: [Uwierzytelnianie wieloskładnikowe][9], Paweł Kraszewski
 
 [1]: {filename}/static/slideshows/org-mode/org-mode.html
 [2]: {filename}/static/slideshows/org-mode/org-mode.org
@@ -18,3 +19,4 @@ do tej pory w ramach Linu.X-labu:
 [6]: {filename}/static/slideshows/BitCoin%20prezentacja.pdf
 [7]: {filename}/static/slideshows/crtp.pdf
 [8]: {filename}/static/slideshows/template-parameter.pdf
+[9]: {filename}/static/slideshows/2FA/index.html
