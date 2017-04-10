@@ -9,10 +9,10 @@ Elektroniki i Technik Informacyjnych Politechniki Warszawskiej.
 
 Zakładam, że spotkanie prawdopodobnie będzie nieco bardziej
 towarzyskie, a mniej techniczne niż zwykle, ze względu na
-prowizoryczny charakter tymczasowej sali. Jeśli warunki pozwolą, to
-postaram się opowiedzieć o technologii [Git Annex][1], narzędzia
-wykorzystującego Gita w niestandardowy sposób, które pozwala na
-wygodne zarządzanie dużymi zbiorami dużych plików.
+prowizoryczny charakter doboru tymczasowej sali. Jeśli warunki
+pozwolą, to postaram się opowiedzieć o technologii [Git Annex][1],
+narzędzia wykorzystującego Gita w niestandardowy sposób, które pozwala
+na wygodne zarządzanie dużymi zbiorami dużych plików.
 
 [1]: https://git-annex.branchable.com/
 
