@@ -5,4 +5,6 @@ Zapraszamy do zapisania się na naszą [listę mailingową](http://lwb.waw.pl/cg
 Kontakt w sprawach organizacyjnych możliwy jest pod adresem:  
 kontakt [at] lwb [dot] waw [dot] pl
 
-Można też nas znaleźć na IRC-u: #linuxlab-pw na irc.freenode.net
+Można też nas znaleźć na IRC-u: [#linuxlab-pw na irc.freenode.net][1]
+
+[1]: https://webchat.freenode.net/?channels=#linuxlab-pw
