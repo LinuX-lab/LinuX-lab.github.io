@@ -1,5 +1,6 @@
 Title: Kwiecień 2017
 Date: 2017-04-10 18:20
+Modified: 2017-04-19 11:00
 Author: Wojciech 'vifon' Siewierski
 
 Kwietniowe spotkanie odbędzie się 21 kwietnia. Ze względu na
@@ -9,10 +10,14 @@ Elektroniki i Technik Informacyjnych Politechniki Warszawskiej.
 
 Zakładam, że spotkanie prawdopodobnie będzie nieco bardziej
 towarzyskie, a mniej techniczne niż zwykle, ze względu na
-prowizoryczny charakter doboru tymczasowej sali. Jeśli warunki
+prowizoryczny charakter doboru tymczasowej sali. <strike>Jeśli warunki
 pozwolą, to postaram się opowiedzieć o technologii [Git Annex][1],
 narzędzia wykorzystującego Gita w niestandardowy sposób, które pozwala
-na wygodne zarządzanie dużymi zbiorami dużych plików.
+na wygodne zarządzanie dużymi zbiorami dużych plików.</strike>
+
+EDIT: *Jednak prawdopodobnie nie wyrobię się z Git Annex, za to Paweł
+Kraszewski przygotował prezentację o minimalizacji rozmiarów
+linuksowych plików wykonywalnych. Zapraszam!*
 
 [1]: https://git-annex.branchable.com/
 
