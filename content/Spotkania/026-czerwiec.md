@@ -2,8 +2,9 @@ Title: Czerwiec 2017
 Date: 2017-05-26 19:00
 Author: Wojciech 'vifon' Siewierski
 
-Zapraszam na spotkanie czerwcowe, które się 2 czerwca. Sala zastępcza
-dalej aktualna, mam nadzieję, że po wakacjach wrócimy na stare śmieci.
+Zapraszam na spotkanie czerwcowe, które odbędzie się 2 czerwca. Sala
+zastępcza dalej aktualna, mam nadzieję, że po wakacjach wrócimy na
+stare śmieci.
 
 Na spotkaniu Marcin Karpezo, znany też jako 'sirmacik', poprowadzi
 prezentację i dyskusję pod tytułem "Bezpieczne aplikacje internetowe
