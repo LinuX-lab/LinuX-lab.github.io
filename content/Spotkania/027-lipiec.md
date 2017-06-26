@@ -20,5 +20,5 @@ Internetu". Zapraszam!
 
 adres: Wydział Elektroniki i Technik Informacyjnych, ul. Nowowiejska 15/19, **sala 138** (pierwsze piętro)  
 data: 7.07.2017  
-start: 16:15  
+start: 16:15 (prezentacja ok. 18:00)  
 koniec: 21:00
