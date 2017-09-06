@@ -1,6 +1,6 @@
 Title: Lipiec 2017
 Date: 2017-06-13 19:00
-Modified: 2017-06-26 14:10
+Modified: 2017-07-07 11:00
 Author: Wojciech 'vifon' Siewierski
 
 Zapraszam na wakacyjne spotkanie lipcowe, które odbędzie się 7 lipca.
@@ -18,7 +18,7 @@ Internetu". Zapraszam!
 
 [1]: https://ipfs.io/
 
-adres: Wydział Elektroniki i Technik Informacyjnych, ul. Nowowiejska 15/19, **sala 138** (pierwsze piętro)  
+adres: Wydział Elektroniki i Technik Informacyjnych, ul. Nowowiejska 15/19, **sala 139** (pierwsze piętro)  
 data: 7.07.2017  
 start: 16:15 (prezentacja ok. 18:00)  
 koniec: 21:00
