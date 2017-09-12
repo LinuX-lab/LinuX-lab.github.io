@@ -1,6 +1,6 @@
 Title: Kontakt
 
-Zapraszamy do zapisania się na naszą [listę mailingową](http://lwb.waw.pl/cgi-bin/mailman/listinfo/lwb "Zapisz się na naszą listę mailingową").
+Zapraszamy do zapisania się na naszą [listę mailingową](https://lwb.waw.pl/cgi-bin/mailman/listinfo/lwb "Zapisz się na naszą listę mailingową").
 
 Kontakt w sprawach organizacyjnych możliwy jest pod adresem:  
 kontakt [at] lwb [dot] waw [dot] pl
