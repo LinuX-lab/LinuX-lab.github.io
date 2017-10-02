@@ -33,5 +33,5 @@ kompletny harmonogram spotkań. Jest on dostępny tutaj: [link][2]
 
 adres: Wydział Elektroniki i Technik Informacyjnych, ul. Nowowiejska 15/19, sala 138 (pierwsze piętro)  
 data: 13.10.2017  
-start: 16:15 (prezentacja ok. 17:30 lub jak zbierze się "publika")  
+start: 16:15 (prezentacja ok. 17:30 lub jak zbierze się publika)  
 koniec: 21:00
