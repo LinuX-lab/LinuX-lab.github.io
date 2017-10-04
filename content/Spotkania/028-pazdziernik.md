@@ -3,7 +3,7 @@ Date: 2017-09-30 19:30
 Author: Wojciech 'vifon' Siewierski
 
 Zbliża się nowy rok akademicki, a z nim nowe spotkanie Linu.X-labu.
-Serdecznie zapraszam na na nie już **13 października**, do sali
+Serdecznie zapraszam na nie już **13 października**, do sali
 **138** na Wydziale Elektroniki i Techniki Informacyjnych Politechniki
 Warszawskiej.
 
