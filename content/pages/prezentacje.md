@@ -12,6 +12,7 @@ do tej pory w ramach Linu.X-labu:
 - 2017-02-10: [Uwierzytelnianie wieloskładnikowe][9], Paweł Kraszewski
 - 2017-04-21: [ELFy, obiekty i skrypty linkera][10], Paweł Kraszewski
 - 2017-05-12: [Git Annex][11], Wojciech 'vifon' Siewierski
+- 2017-10-13: [Packageless Packages with GNU Stow][12], Wojciech 'vifon' Siewierski
 
 [1]: {filename}/static/slideshows/org-mode/org-mode.html
 [2]: {filename}/static/slideshows/org-mode/org-mode.org
@@ -24,3 +25,4 @@ do tej pory w ramach Linu.X-labu:
 [9]: {filename}/static/slideshows/2FA/index.html
 [10]: https://github.com/p-kraszewski/LwB-20170421-linking/blob/master/Prezentacja.pdf
 [11]: {filename}/static/slideshows/git-annex/index.html
+[12]: {filename}/static/slideshows/stow/index.html
