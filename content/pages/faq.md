@@ -31,7 +31,23 @@ bardziej odczuwalne gdy spotkania trwały po 12 godzin.*
 
 ## Q: Ile można się spóźnić?
 
-*A: Do nas praktycznie **nie da się** spóźnić. Przyjść można w dowolnym
-momencie, nie istnieje pojęcie spóźnienia. Podobnie, nikt się nie
-obrazi jeśli ktoś wyjdzie w połowie. Podane godziny to jedynie
+*A: Można powiedzieć, że do nas **nie da się** spóźnić. Przyjść można
+w dowolnym momencie, nie istnieje pojęcie spóźnienia. Podobnie, nikt
+się nie obrazi jeśli ktoś wyjdzie w połowie. Podane godziny to jedynie
 przedział godzinowy, kiedy jesteśmy na miejscu i można nas odwiedzić.*
+
+## Q: Interesuje mnie pewien konkretny temat. Jest szansa, że się pojawi?
+
+*A: Tak! Daj nam znać na liście mailingowej, na IRC-u albo
+bezpośrednio na jednym ze spotkań. Zobaczymy co da się zrobić!*
+
+## Q: Czy warto wziąć ze sobą laptopa?
+
+*A: Zwykle tak, choć zależy czego dokładnie oczekujesz od spotkania.
+Często można usłyszeć o jakimś ciekawym mechanizmie i wtedy dobrze móc
+od razu go wypróbować. W skrócie: wedle uznania.*
+
+## Q: Czy oczekuje się, że będę robić notatki jak na wykładzie?
+
+*A: Były przypadki, że ludzie robili, ale nikt tego nie oczekuje, więc
+można śmiało przyjść luźno posłuchać.*
