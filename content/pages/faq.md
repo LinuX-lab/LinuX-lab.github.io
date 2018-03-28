@@ -18,7 +18,7 @@ mamy z tego przychodów ani szeroko pojętych funduszy.*
 wręcz zastanawiasz się jak zacząć, to to jest właśnie miejsce, gdzie
 możesz otrzymać ewentualną pomoc.*
 
-## Q: Czemu są dwie godziny rozpoczęcia? "Godzina otwarcia" i "godzina prezentacji". Na którą należy przyjść?
+## Q: Czemu czasem są dwie godziny rozpoczęcia? "Godzina otwarcia" i "godzina prezentacji". Na którą należy przyjść?
 
 *A: W przeciwieństwie do wielu innych grup tego typu, u nas
 prezentacja nie jest centralnym punktem programu. Lwią część
@@ -31,10 +31,12 @@ bardziej odczuwalne gdy spotkania trwały po 12 godzin.*
 
 ## Q: Ile można się spóźnić?
 
-*A: Można powiedzieć, że do nas **nie da się** spóźnić. Przyjść można
-w dowolnym momencie, nie istnieje pojęcie spóźnienia. Podobnie, nikt
-się nie obrazi jeśli ktoś wyjdzie w połowie. Podane godziny to jedynie
-przedział godzinowy, kiedy jesteśmy na miejscu i można nas odwiedzić.*
+*A: Na swój sposób do nas nie da się spóźnić. Przyjść można w dowolnym
+momencie, nie istnieje pojęcie spóźnienia. Podobnie, nikt się nie
+obrazi jeśli ktoś wyjdzie w połowie. Podane godziny to jedynie
+przedział godzinowy, kiedy jesteśmy na miejscu i można nas odwiedzić.
+Oczywiście prezentacje są kiedy są, ale nikt nie będzie miał go nikogo
+żalu o wejście/wyjście w środku.*
 
 ## Q: Interesuje mnie pewien konkretny temat. Jest szansa, że się pojawi?
 
