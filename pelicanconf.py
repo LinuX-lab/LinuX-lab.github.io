@@ -16,11 +16,16 @@ ARTICLE_EXCLUDES = ['static']
 
 READERS = {'html': None}
 
-MD_EXTENSIONS = [
-    'codehilite(css_class=highlight)',
-    'extra',
-    'smarty',
-]
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+        'markdown.extensions.attr_list': {},
+        'markdown.extensions.smarty': {},
+    },
+    'output_format': 'html5',
+}
 
 PATH = 'content'
 
@@ -44,7 +49,7 @@ AUTHOR_FEED_RSS = None
 # Social widget
 # SOCIAL = (('You can add links in your config file', '#'),
 #           ('Another social link', '#'),)
-SOCIAL = (('Lista mailingowa', 'http://lwb.waw.pl/cgi-bin/mailman/listinfo/lwb'),)
+SOCIAL = (('Lista mailingowa', 'http://linuxlab.pw/cgi-bin/mailman/listinfo/lwb'),)
 
 # DEFAULT_PAGINATION = False
 

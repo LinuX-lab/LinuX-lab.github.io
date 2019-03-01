@@ -18,7 +18,7 @@ staramy się by były one ciekawe i możliwie praktyczne.
 
 Jak do nas trafić:  
 *Politechnika Warszawska, Wydział Elektroniki i Technik Informacyjnych  
-ul. Nowowiejska 15/19, X-lab.PW (pokój 039, piwnica)*
+ul. Nowowiejska 15/19, <strike>X-lab.PW (pokój 039, piwnica)</strike> sala 138, pierwsze piętro*
 <iframe width="95%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=21.00456118583679%2C52.21652758228905%2C21.019002199172974%2C52.22142444587129&amp;layer=transportmap&amp;marker=52.218976081569984%2C21.011781692504883" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=52.21898&amp;mlon=21.01178#map=17/52.21898/21.01178&amp;layers=T">Pokaż dużą mapę</a></small>
 
 Zespół:

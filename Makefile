@@ -12,7 +12,7 @@ FTP_HOST=localhost
 FTP_USER=anonymous
 FTP_TARGET_DIR=/
 
-SSH_HOST=lwb.waw.pl
+SSH_HOST=lwb
 SSH_PORT=22
 SSH_USER=vifon
 SSH_TARGET_DIR=/var/www/mainsite-upload

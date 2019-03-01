@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/solarized.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="custom.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+     var link = document.createElement( 'link' );
+     link.rel = 'stylesheet';
+     link.type = 'text/css';
+     link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+     document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+	<section>
+          <h1>Wprowadzenie do systemu kontroli wersji Git</h1>
+          <h2>Wojciech 'vifon' Siewierski</h2>
+        </section>
+
+	<section>
+          <section>
+            <h2>Zarządzanie wersjami bez systemu kontroli wersji</h2>
+          </section>
+          <section>
+            <div>
+              <ul>
+                <li>
+                  my_project/
+                  <ul>
+                    <li>file.c</li>
+                    <li>header.h</li>
+                    <li>Makefile</li>
+                  </ul>
+                </li>
+                <li class="fragment">my_project.zip</li>
+                <li class="fragment">my_project_prawie_działa.zip</li>
+                <li class="fragment">my_project_final.zip</li>
+                <li class="fragment">my_project_final2.zip</li>
+                <li class="fragment">my_project_oddany.zip</li>
+              </ul>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Zarządzanie wersjami z Gitem</h2>
+          </section>
+          <section>
+            <div>
+              <ul>
+                <li>
+                  my_project/
+                  <ul>
+                    <li>.git/</li>
+                    <li>file.c</li>
+                    <li>header.h</li>
+                    <li>Makefile</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Ćwiczenie praktyczne:</h2>
+            <ul>
+              <li><code>git add</code></li>
+              <li><code>git commit</code></li>
+              <li><code>git log</code></li>
+            </ul>
+          </section>
+          <section>
+            <img alt="sample_repo" src="diagrams/1_sample_repo.svg">
+          </section>
+        </section>
+
+        <section>
+          <h2>Co nam daje commit?</h2>
+          <ol>
+            <li class="fragment">Kiedy dodano zmianę.</li>
+            <li class="fragment">Kto dodał zmianę.</li>
+            <li class="fragment" style="font-weight: bold;">
+              Dlaczego dodano zmianę!
+            </li>
+          </ol>
+        </section>
+
+        <section>
+          <section>
+            <h2>Zrobiliśmy błąd! Co teraz?!</h2>
+            <code class="fragment">git commit --amend</code>
+          </section>
+          <section>
+            <img alt="amended_repo_before"
+                 src="diagrams/2-1_amended_repo_before.svg"
+            />
+            <div>
+              <img alt="amended_repo_after_incorrect"
+                   src="diagrams/2-2_amended_repo_after_incorrect.svg"
+                   class="fragment img"
+              />
+              <img alt="amended_repo_after_correct"
+                   src="diagrams/2-3_amended_repo_after_correct.svg"
+                   class="fragment"
+              />
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Repozytorium jako graf</h2>
+            <ul style="text-align: center;">
+              <li class="fragment">Commit jako węzeł grafu.</li>
+              <li class="fragment">Relacje commitów jako krawędzie.</li>
+              <li class="fragment">
+                Gałęzie i tagi jako interesujące nas punkty w grafie!
+              </li>
+              <li class="fragment" style="font-weight: bold;">
+                Graf nigdy nie ulega zmianie! Dochodzą jedynie węzły
+                oraz przemieszczamy się przy użyciu gałęzi. Nie
+                istnieją* operacje destrukcyjne.
+              </li>
+            </ul>
+          </section>
+          <section>
+            <code>git reflog</code> jako "historia przeglądarki",
+            dziennik wykonanych operacji oraz anioł-stróż.
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Poruszanie się po grafie repozytorium</h2>
+          </section>
+          <section>
+            <ul>
+              <li class="fragment">
+                <code>git checkout</code> przenosi nas na inną gałąź.
+              </li>
+              <li class="fragment">
+                <p>
+                  <code>git reset</code> przenosi całą aktualną gałąź do
+                  innego punktu grafu. Commity nie ulegają zmianom,
+                  jedynie commit, na jaki gałąź wskazuje.
+                </p>
+                <p class="fragment">
+                  Można tak wycofywać lokalne zmiany (choć są bardziej
+                  wyrafinowane sposoby).
+                </p>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h1>Dziękuję za uwagę!</h1>
+          <div class="credits">
+            <p>Wojciech 'vifon' Siewierski</p>
+            <p><a href="https://einval.eu/">https://einval.eu/</a></p>
+            <p><a href="https://github.com/vifon">https://github.com/vifon</a></p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+     // More info about config & dependencies:
+     // - https://github.com/hakimel/reveal.js#configuration
+     // - https://github.com/hakimel/reveal.js#dependencies
+     Reveal.initialize({
+       dependencies: [
+	 { src: 'plugin/markdown/marked.js' },
+	 { src: 'plugin/markdown/markdown.js' },
+	 { src: 'plugin/notes/notes.js', async: true },
+	 { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+       ],
+       history: true
+     });
+    </script>
+  </body>
+</html>

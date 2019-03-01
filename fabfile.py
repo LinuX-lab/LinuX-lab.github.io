@@ -12,7 +12,7 @@ env.deploy_path = 'output'
 DEPLOY_PATH = env.deploy_path
 
 # Remote server configuration
-production = 'vifon@lwb.waw.pl:22'
+production = 'vifon@lwb:22'
 dest_path = '/var/www/mainsite-upload'
 
 # Rackspace Cloud Files configuration settings
