@@ -19,21 +19,23 @@ do tej pory w ramach Linu.X-labu:
 - 2018-09-14: [Słowem o Ansiblu. Tom I.  Wprowadzenie. Dobre
 praktyki. Wzorce i antywzorce. Przykłady wykorzystania][16] --- Kamil Zabielski
 - 2019-04-05: [Wprowadzenie do języka Rust][17] --- Paweł Kraszewski
+- 2021-01-15: [Ansible][18], materiały --- Łukasz Posadowski
 
-[1]: {filename}/static/slideshows/org-mode/org-mode.html
-[2]: {filename}/static/slideshows/org-mode/org-mode.org
+[1]: {static}/static/slideshows/org-mode/org-mode.html
+[2]: {static}/static/slideshows/org-mode/org-mode.org
 [3]: https://github.com/p-kraszewski/linux-w-bramie/tree/master/2015-05-29-Go
 [4]: https://github.com/p-kraszewski/linux-w-bramie/tree/master/2015-07-17-Go
 [5]: https://github.com/p-kraszewski/LwB-20160304-Erlang
-[6]: {filename}/static/slideshows/BitCoin%20prezentacja.pdf
-[7]: {filename}/static/slideshows/crtp.pdf
-[8]: {filename}/static/slideshows/template-parameter.pdf
-[9]: {filename}/static/slideshows/2FA/index.html
+[6]: {static}/static/slideshows/BitCoin%20prezentacja.pdf
+[7]: {static}/static/slideshows/crtp.pdf
+[8]: {static}/static/slideshows/template-parameter.pdf
+[9]: {static}/static/slideshows/2FA/index.html
 [10]: https://github.com/p-kraszewski/LwB-20170421-linking/blob/master/Prezentacja.pdf
-[11]: {filename}/static/slideshows/git-annex/index.html
-[12]: {filename}/static/slideshows/stow/index.html
+[11]: {static}/static/slideshows/git-annex/index.html
+[12]: {static}/static/slideshows/stow/index.html
 [13]: https://github.com/p-kraszewski/LwB-20171117-Linux-z-zapalek
-[14]: {filename}/static/slideshows/git-1/index.html
+[14]: {static}/static/slideshows/git-1/index.html
 [15]: https://github.com/p-kraszewski/LinuXLab-20180511-Boot
 [16]: https://github.com/lintops/ansible-sample-repository
 [17]: https://github.com/LinuX-lab/20180208-Rust
+[18]: https://repo.baszarek.pl/ansible/master/

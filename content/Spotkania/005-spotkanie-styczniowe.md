@@ -25,7 +25,7 @@ konieczcie się tym podzielcie.** Jeśli teraz myślisz "Nie, ja za mało
 wiem, żeby coś proponować", to to właśnie na Twój wkład czekamy. Czy
 to mailem, czy najlepiej osobiście na spotkaniu.
 
-![Uncle Sam]({filename}/images/uncle_sam.jpg)
+![Uncle Sam]({static}/images/uncle_sam.jpg)
 
 adres: Wydział Elektroniki i Technik Informacyjnych, ul. Nowowiejska 15/19, piwnica, pokój 039  
 data: 30.01.2015  

@@ -9,6 +9,8 @@ SITEURL = ''
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
 ARTICLE_SAVE_AS = ARTICLE_URL
 
+OUTPUT_RETENTION = ['.git']
+
 SLUGIFY_SOURCE = 'title'
 
 STATIC_PATHS = ['images', 'static']
