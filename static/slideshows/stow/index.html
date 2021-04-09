@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Packageless Packages</title>
+
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/solarized.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<link rel="stylesheet" href="custom.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+	 var link = document.createElement( 'link' );
+	 link.rel = 'stylesheet';
+	 link.type = 'text/css';
+	 link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	 document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+  </head>
+  <body>
+	<div class="reveal">
+	  <div class="slides">
+		<section>
+          <h1>Packageless Packages with GNU Stow</h1>
+          <h2>Wojciech 'vifon' Siewierski</h2>
+        </section>
+		<section>
+          <h3>Packages from the repositories</h3>
+          <section>
+            <p>Why do we need them?</p>
+            <p>Why do we like them?</p>
+          </section>
+          <section>
+            <ul>
+              <li class="fragment grow">They are easy to update.</li>
+              <li class="fragment grow">They are easy to remove.</li>
+              <li class="fragment grow">They handle their dependencies.</li>
+              <li class="fragment grow">They are adjusted for our system.</li>
+              <li class="fragment grow">They are trustworthy.</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <h3>Self-made packages</h3>
+          <section>
+            <ul>
+              <li>
+                Needed (?) for the applications not present in the
+                repositories<span class="fragment" data-fragment-index="1">*</span>.
+              </li>
+              <li>Cumbersome to create.</li>
+
+              <p class="fragment" data-fragment-index="1">
+                *) Including the manually downloadable 3rd party packages.
+              </p>
+            </ul>
+          </section>
+          <section>
+            <h4>What is needed</h4>
+            <ul>
+              <li class="fragment grow">How to build the application.</li>
+              <li class="fragment grow">The dependencies.</li>
+              <li class="fragment grow">Additional metadata.</li>
+              <li class="fragment grow">How to use a dpkg/rpm/makepkg/… .</li>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <li class="fragment highlight-red">They are easy to update.</li>
+              <li class="fragment highlight-green">They are easy to remove.</li>
+              <li class="fragment highlight-red">They handle their dependencies.</li>
+              <li class="fragment highlight-red">They are adjusted for our system.</li>
+              <li class="fragment highlight-red">They are trustworthy.</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <h3>GNU Stow "packages"</h3>
+          <section>
+            <div class="columns">
+              <div class="col">
+                <span class="vfn-label">Vim</span>
+                <p>
+                  <ul class="file-tree">
+                    <li>bin</li>
+                    <ul>
+                      <li>vim</li>
+                    </ul>
+                    <li>lib</li>
+                    <ul>
+                      <li>libvim.so</li>
+                    </ul>
+                    <li>share</li>
+                    <ul>
+                      <li>vim-icon.png</li>
+                    </ul>
+                  </ul>
+                </p>
+              </div>
+              <div class="col">
+                <span class="vfn-label">Emacs</span>
+                <p>
+                  <ul class="file-tree">
+                    <li>bin</li>
+                    <ul>
+                      <li>emacs</li>
+                    </ul>
+                    <li>lib</li>
+                    <ul>
+                      <li>libemacs.so</li>
+                    </ul>
+                    <li>share</li>
+                    <ul>
+                      <li>emacs-icon.png</li>
+                    </ul>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="col">
+              <span class="vfn-label">Stow</span>
+              <p>
+                <ul class="file-tree">
+                  <li>bin</li>
+                  <ul>
+                    <li>emacs -> ../stow/emacs/bin/emacs</li>
+                    <li>vim -> ../stow/vim/bin/vim</li>
+                  </ul>
+                  <li>lib</li>
+                  <ul>
+                    <li>libemacs.so -> ../stow/emacs/lib/libemacs.so</li>
+                    <li>libvim.so -> ../stow/vim/lib/libvim.so</li>
+                  </ul>
+                  <li>share</li>
+                  <ul>
+                    <li>emacs-icon.png -> ../stow/emacs/share/emacs-icon.png</li>
+                    <li>vim-icon.png -> ../stow/vim/share/vim-icon.png</li>
+                  </ul>
+                </ul>
+              </p>
+            </div>
+          </section>
+          <section>
+            <ul>
+              <li class="fragment highlight-red">They are easy to update.</li>
+              <li class="fragment highlight-green">They are easy to remove.</li>
+              <li class="fragment highlight-red">They handle their dependencies.</li>
+              <li class="fragment highlight-red">They are adjusted for our system.</li>
+              <li class="fragment highlight-red">They are trustworthy.</li>
+            </ul>
+          </section>
+          <section>
+            <h4>What is needed</h4>
+            <ul>
+              <li class="fragment highlight-green">How to build the application.</li>
+              <li class="fragment highlight-green">The dependencies.</li>
+              <li class="fragment highlight-red">Additional metadata.</li>
+              <li class="fragment highlight-blue">How to use GNU Stow.</li>
+            </ul>
+            <div class="fragment">
+              <p>Bonus: Works on every system!</p>
+            </div>
+          </section>
+        </section>
+        <section>
+          <h1>Thank you</h1>
+          <h2 class="fragment">...and let me show you how it works!</h2>
+        </section>
+	  </div>
+      <div class="footer">
+        <a href="https://linuxlab.pw">https://linuxlab.pw</a>
+      </div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+
+	<script>
+	 // More info about config & dependencies:
+	 // - https://github.com/hakimel/reveal.js#configuration
+	 // - https://github.com/hakimel/reveal.js#dependencies
+	 Reveal.initialize({
+	   dependencies: [
+		 { src: 'plugin/markdown/marked.js' },
+		 { src: 'plugin/markdown/markdown.js' },
+		 { src: 'plugin/notes/notes.js', async: true },
+		 { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+	   ],
+       history: true
+	 });
+	</script>
+  </body>
+</html>

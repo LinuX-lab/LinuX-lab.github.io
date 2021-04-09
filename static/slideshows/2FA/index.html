@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/beige.css">
+    <title>Uwierzytelniane wieloskładnikowe</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-background="img/keys-orig.jpg" class="dark">
+                <h1>Uwierzytelnianie wieloskładnikowe</h1> Paweł Kraszewski
+            </section>
+
+            <section data-background="img/keys.jpg">
+                <img src="img/5USD_Crypto.png" alt="XKCD $5 cryptography" width="90%" />
+            </section>
+
+            <!-- ================================================================= -->
+            <section data-background="img/keys-orig.jpg" class="dark">
+                <h2>3 podstawowe typy uwierzytelniania</h2>
+                <ul>
+                    <li>Użytkownik <b style="color: #f80;">wie</b></li>
+                    <li>Użytkownik <b style="color: #ff0;">ma</b></li>
+                    <li>Użytkownik <b style="color: #0f0;">jest</b></li>
+                </ul>
+            </section>
+            <!-- ================================================================= -->
+
+            <section data-background="img/keys.jpg">
+                <section data-background="img/keys-orig.jpg" class="dark">
+                    <h1>Użytkownik wie</h1>
+                </section>
+                <section>
+                    <h2>Użytkownik wie</h2>
+                    <p>Podstawowy typ uwierzytelniania, stosowany od zarania informatyki:</p>
+                    <p style="font-size:1.5em;">login + hasło</p>
+                </section>
+                <section>
+                    <h2>Użytkownik wie</h2>
+                    <p> Najprostszy w realizacji, nie wymaga dodatkowego sprzętu.</p>
+                </section>
+                <section>
+                    <h2>Użytkownik wie</h2>
+                    <p>Bazuje tylko na wiedzy i pamięci użytkownika.</p>
+                </section>
+                <section>
+                    <h2>Użytkownik wie</h2>
+                    <p>Hasła łatwo przechwycić przez keyloggery, sniffery, wysłanie użytkownika na fałszywą stronę logowania do usługi albo kradzież bazy haseł (hash+salt!).</p>
+                    <p>Pojawiła się koncepcja <em>haseł maskowanych</em></p>
+                </section>
+                <section>
+                    <h2>Użytkownik wie</h2>Dobre hasła są trudne do zapamiętania. Hasła łatwe do zapamiętania są łatwe do złamania.
+                </section>
+                <section>
+                    <img src="img/password_strength.png" alt="XKCD password strength estimation" width="80%"/>
+                </section>
+                <section>
+                    <h2>Użytkownik wie</h2>
+                    <p>Aby poprawić jakość haseł pojawiły się <em>generatory haseł</em></p>
+                    <p>Aby ułatwić życie pojawiły się <em>menadżery haseł</em></p>
+                </section>
+                <section>
+                    <h2>Użytkownik wie</h2>
+                    <p style="color: red; text-decoration: underline;">Nigdy nie używaj takiego samego albo podobnego hasła w różnych serwisach i usługach</p>
+                    <p>Nigdy nie wiesz, jaki idiota projektował moduł uwierzytelnienia</p>
+                </section>
+            </section>
+            <!-- ================================================================= -->
+
+            <section data-background="img/keys.jpg">
+                <section data-background="img/keys-orig.jpg" class="dark">
+                    <h1>Użytkownik ma</h1>
+                </section>
+                <section>
+                    <h2>Użytkownik ma</h2>
+                    <p>Obecne najpopularniejszy typ uwierzytelniana w systemach klasy enterprise i coraz popularniejszy „w cywilu”.</p>
+                </section>
+                <section>
+                    <h2>Użytkownik ma</h2>
+                    <p>Poza wiedzą o loginie i haśle (traktowanych jako jeden element uwierzytelnienia), użytkownik ma dodatkowe urządzenie albo przedmiot dostarczające drugiego elementu uwierzytelnienia, zawsze o charakterze zmiennym.</p>
+                </section>
+                <section>
+                    <h2>Użytkownik ma</h2>
+                    <p>Ten dodatkowy element, tzw „drugi składnik” (ang. „second factor”) jest tym, co użytkownik musi <u>mieć przy sobie</u>, żeby móc się zalogować do systemu bądź usługi. Mechanizm nazywa się „uwierzytelnieniem dwuskładnikowym”, „Two Factor
+                        Authentication”, w skrócie <strong>2FA</strong></p>
+                </section>
+                <section>
+                    <h2>Użytkownik ma</h2>
+                    <ul>
+                        <li>Karty kodów i haseł jednorazowych
+                            <li>Kody i hasła jednorazowe przez SMS i usługi voice</li>
+                            <li>Kody jednorazowe generowane według standardu OATH-HOTP/OATH-TOTP</li>
+                            <li>Tokeny kryptograficzne</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Karty kodów i haseł jednorazowych</h3>
+                    <ul>
+                        <li>Najtańszy typ 2FA</li>
+                        <li>Limitowana ilość logowań na kartę</li>
+                        <li>Łatwo zapewnić rozliczalność użycia</li>
+                        <li>Źle zabezpieczona karta (bez farby maskującej) jest podatna na kopiowanie</li>
+                        <li>Występują karty losowe i algorytmiczne.</li>
+                        <li>Problem logistyczny z bezpiecznym dostarczeniem nowej karty przed końcem ważności starej.</li>
+                        <li>Da się zrealizować „w domu”</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Kody przez SMS/voice</h3>
+                    <ul>
+                        <li>Koszt zależy od liczby logowań w ciągu miesiąca</li>
+                        <li>Nie ma niebezpieczeństwa, że „skończą się hasła”, nie ma problemów z dystrybucją</li>
+                        <li>Jest niebezpieczeństwo przechwycenia przez złośliwe aplikacje w telefonie, podsłuch linii (voice przez linię PSTN), ataki na sieć GSM</li>
+                        <li>Praktycznie niewykonalne dla osoby fizycznej przy większym wolumenie ruchu.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Kody jednorazowe HOTP/TOTP</h3>
+                    <p>Praktycznie zawsze jest to kod o długości 6-10 cyfr (wyjątek – YubiKey, 44 znaki alfanumeryczne)</p>
+                </section>
+                <section>
+                    <h3>Kody jednorazowe HOTP</h3>
+                    <p>Kody jednorazowe „per use” (bez zegara).</p>
+                    <p>Każde użycie generuje nowy kod. Najprostsze, ale można „ukraść” następny kod</p>
+                    <p><a href="https://www.ietf.org/rfc/rfc4226.txt">RFC-4226</a></p>
+                    <p>Odmianą HOTP jest Yubikey-OTP</p>
+                </section>
+                <section>
+                    <h3>Kody jednorazowe TOTP</h3>
+                    <p>Kody jednorazowe zmienne w czasie.</p>
+                    <p>Najczęściej raz na 30 sekund generowany jest nowy kod, ważny tylko w trakcie tych 30 sekund.</p>
+                    <p><a href="https://www.ietf.org/rfc/rfc6238.txt">RFC-6238</a>.</p>
+                    <p>Google authenticatior, RSA-SecurID (własny standard)</p>
+                </section>
+                <section>
+                    <img src="img/WebCam.png" alt="RSA SecurID done wrong" width="55%" />
+                    <p>Kody jednorazowe, robisz to źle</p>
+                </section>
+                <section>
+                    <h3>Kody jednorazowe HOTP/TOTP</h3>
+                    <p>Koszt od <strong>0</strong> (HOTP/TOTP na darmowej bibliotece po stronie serwera, wykorzystanie Google Authenticatora albo odpowiednika po stronie klienta) do <strong>bardzo dużo</strong> (bardzo droga infrastruktura RSA SecurID z rocznymi opłatami licencyjnymi)</p>
+                    <img src="img/SecurID.png" alt="RSA SecurID" width="35%" />
+                </section>
+                <section>
+                    <h3>Kody jednorazowe HOTP/TOTP</h3>
+                    <p>HOTP/TOTP oparte są o <span style="color: red;"> współdzielony sekret</span> (RSA to tylko nazwa firmy, nie ma tam algorytmu klucza publicznego). <span style="color: red; text-decoration: underline;">Kompromitacja serwera pozwala przewidzieć wszystkie kody wszystkich użytkowników do momentu wymiany wszystkich kluczy.</span></p>
+                </section>
+
+                <section>
+                    <h2>Użytkownik ma</h2>
+                    <p>Kryptografia asymetryczna</p>
+                    <ul>
+                        <li>Karty/tokeny mikroprocesorowe zgodne ze standardem PKCS#11 – certyfikaty x509 i klucze RSA/ECDSA</li>
+                        <li>Tokeny mikroprocesorowe zgodne ze standardem FIDO/U2F</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Tokeny PKCS#11</h3>
+                    <ul>
+                        <li>Token zabezpieczony PINem</li>
+                        <li>Certyfikat w tokenie służy do uwierzytelnienia całego tunelu SSL/TLS między klientem a serwerem</li>
+                        <li>Wymagają infrastruktury PKI</li>
+                      </ul>
+                </section>
+                <section>
+                    <h3>Tokeny PKCS#11</h3>
+                    <img src="img/eToken.png" alt="Gemalto eToken Pro 5100" width="40%" /><img src="img/ePass2003.png" alt="Feitian ePass 2003" width="40%" />
+                    <ul>
+                        <li>Wymagają wsparcia w przeglądarce</li>
+                        <li>Wymagają sterowników i działającej usługi pośredniczącej</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Tokeny FIDO/U2F</h3>
+                    <img src="img/Fido-U2F.png" alt="'FIDO U2F certified' logo" width="50%" />
+                    <ul>
+                        <li>Token <u>nie jest zabezpieczony przed niepowołanym użyciem</u></li>
+                        <li>Uwierzytelnienie challenge-response</li>
+                        <li>Nie wymaga PKI (<em>nie do końca prawda</em>)</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Tokeny FIDO/U2F</h2>
+                    <img src="img/YKall.png" alt="YubiKey family" width="30%" /><img src="img/Kedo.png" alt="Kedo FIDO U2F key" width="30%" />
+                    <ul>
+
+                        <li><u>Nie wymagają</u> sterowników (protokół USB-HID)</li>
+                        <li>Wymagają wsparcia w przeglądarce (bridge z silnika JavaScript do usług HID)</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Architektura</h3>
+                    <img src="img/fido-uaf-architecture.png" alt="FIDO U2F architecture" width="80%" />
+                </section>
+                <section>
+                    <h3>Rejestracja</h3>
+                    <img src="img/fido-uaf-overview-reg-flow.png" alt="FIDO U2F registration" width="80%" />
+                </section>
+                <section>
+                    <h3>Weryfikacja</h3>
+                    <img src="img/fido-uaf-overview-auth-flow.png" alt="FIDO U2F authentication" width="80%" />
+                </section>
+            </section>
+
+            <!--
+            <section>
+                <h2>Tokeny PKCS#11</h2>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </section>
+            <section>
+                <h2>Tokeny PKCS#11</h2>
+                <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+                        </section>
+          -->
+
+            <!-- ================================================================= -->
+            <section data-background="img/keys.jpg">
+                <section data-background="img/keys-orig.jpg" class="dark">
+                    <h1>Użytkownik jest</h1>
+
+                </section>
+                <section>
+                    <h2>Użytkownik jest</h2>
+                    <p>To sam użytkownik jest składnikiem uwierzytelnienia. Jest to dziedzina metod biometrycznych</p>
+
+                </section>
+                <section>
+                    <h2>Użytkownik jest</h2>
+                    <ul>
+                        <li>Odcisk palca</li>
+                        <li>Skan tęczówki i/lub siatkówki</li>
+                        <li>Skan termiczny naczyń głębokich dłoni i/lub twarzy</li>
+                        <li>Analiza głosu</li>
+                        <li>Rozpoznawanie twarzy</li>
+                    </ul>
+                    <p style="color: navy;">wygoda &sdot; bezpieczeństwo &sdot; cena<sup><small>-1</small></sup> = <em>const</em></p>
+                </section>
+            </section>
+
+            <!-- ================================================================= -->
+
+            <section data-background="img/keys-orig.jpg" class="dark">
+                <h1>Dziękuję</h1>
+            </section>
+        </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            slideNumber: 'c/t',
+
+            transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [{
+                    src: 'lib/js/classList.js',
+                    condition: function() {
+                        return !document.body.classList;
+                    }
+                },
+                {
+                    src: 'plugin/markdown/marked.js',
+                    condition: function() {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                },
+                {
+                    src: 'plugin/markdown/markdown.js',
+                    condition: function() {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                },
+                {
+                    src: 'plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function() {
+                        hljs.initHighlightingOnLoad();
+                    }
+                },
+                {
+                    src: 'plugin/zoom-js/zoom.js',
+                    async: true
+                },
+                {
+                    src: 'plugin/notes/notes.js',
+                    async: true
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>

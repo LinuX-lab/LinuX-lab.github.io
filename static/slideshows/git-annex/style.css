@@ -1,0 +1,29 @@
+.footer {
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+  font-size: 50% !important;
+  opacity: 0.5;
+}
+
+.columns {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  /* border: 1px ridge black !important; */
+}
+
+.icon {
+  font-size: 300% !important;
+}
+
+.vfn-label {
+  opacity: 0.5;
+}
+
+.file-tree {
+  font-family: monospace !important;
+  font-size: 70% !important;
+}

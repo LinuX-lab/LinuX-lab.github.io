@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Git Annex</title>
+
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/solarized.css">
+    <link rel="stylesheet" href="style.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+	 var link = document.createElement( 'link' );
+	 link.rel = 'stylesheet';
+	 link.type = 'text/css';
+	 link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	 document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+  </head>
+  <body>
+	<div class="reveal">
+	  <div class="slides">
+		<section>
+          <h1>Git Annex</h1>
+          <h2>Wojciech 'vifon' Siewierski</h2>
+        </section>
+        <section>
+		  <p>
+            Git, a de facto industry standard version control system
+            (VCS), was designed to store small to medium files. Why
+            would anyone store big files in a VCS anyway?
+          </p>
+        </section>
+        <section>
+          <h2>The problem</h2>
+          <div class="fragment">
+            <p>People want to store big files in the VCS's.</p>
+            <p>ಠ_ಠ</p>
+            <p>Images, videos, audio files and other types of binary assets.</p>
+          </div>
+          <aside class="notes">
+            Video games industry.
+          </aside>
+        </section>
+        <section>
+          <h2>The consequences</h2>
+          <section>
+            <div class="icon">⌚</div>
+            <h3>Longer file  processing time</h3>
+            <p>Git frequently needs to compare files and calculate their
+              hashes.</p>
+            <div class="fragment">
+              <p>Bigger file &rArr; longer file processing time.</p>
+              <p>More bigger files &rArr; much longer repository
+                processing time.</p>
+            </div>
+            <aside class="notes">
+              Git status in shell prompts.
+            </aside>
+          </section>
+          <section>
+            <h3>Larger repository</h3>
+            The files cannot be downloaded selectively
+            <div>
+              <ul class="file-tree">
+                <li class="fragment highlight-red" data-fragment-index="2">
+                  ubuntu-16.04.iso (4 GiB)
+                </li>
+                <li class="fragment highlight-red" data-fragment-index="1">
+                  very-important-data.tar.gz (3 GiB)
+                </li>
+                <li class="fragment highlight-red" data-fragment-index="2">
+                  promotional-video.mkv (2.4 GiB)
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <h3>Larger repository history</h3>
+            <div class="columns">
+              <div class="col">
+                <span class="vfn-label">January 2017</span>
+                <ul class="file-tree">
+                  <li class="fragment highlight-red" data-fragment-index="3">
+                    ubuntu-16.04.iso (4 GiB)
+                  </li>
+                  <li class="fragment highlight-red" data-fragment-index="3">
+                    backups.tar.gz (2.8 GiB)
+                  </li>
+                  <li class="fragment highlight-red" data-fragment-index="3">
+                    video.mkv (2.1 GiB)
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <span class="vfn-label">April 2017</span>
+                <ul class="file-tree">
+                  <li class="fragment highlight-red" data-fragment-index="2">
+                    ubuntu-16.04.iso (4 GiB)
+                  </li>
+                  <li class="fragment highlight-red" data-fragment-index="1">
+                    backups.tar.gz (3 GiB)
+                  </li>
+                  <li class="fragment highlight-red" data-fragment-index="2">
+                    video.mkv (2.4 GiB)
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <aside class="notes">
+              Git shallow clone helps but the full repository still
+              stores the archival assets.
+            </aside>
+          </section>
+        </section>
+        <section>
+          <h2>The solution</h2>
+          <section>
+            <p>
+              <blockquote>
+                "All problems in computer science can be
+                solved by another level of indirection."
+              </blockquote>
+              -- David J. Wheeler
+            </p>
+          </section>
+          <section>
+            <div>
+              <div>
+                <ol>
+                  <li>
+                    Don't commit the big files, commit small identifiers!
+                  </li>
+                  <li>
+                    Store the files somewhere else.
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <aside class="notes">
+              <dl>
+                <dt>ad. 1</dt>
+                <dd>Manually storing references to files would be tiresome. Can we automate it somehow? Maybe symlinks?</dd>
+                <dt>ad. 2</dt>
+                <dd>Treat the actual content as metadata, place it in <tt>.git/</tt></dd>
+              </dl>
+            </aside>
+          </section>
+          <section>
+            <div>
+              <span class="vfn-label">Enter Git Annex!</span>
+              <div>
+                <ul class="file-tree">
+                  <li>
+                    <span class="fragment highlight-red" data-fragment-index="2">ubuntu-16.04.iso</span> ->
+                    <span class="fragment highlight-green" data-fragment-index="4">.git/annex/SHA256E-7f...2164.iso</span>
+                  </li>
+                  <li>
+                    <span class="fragment highlight-red" data-fragment-index="1">backups.tar.gz</span> ->
+                    <span class="fragment highlight-red" data-fragment-index="3">.git/annex/SHA256E-30...ca7d.tar.gz</span>
+                  </li>
+                  <li>
+                    <span class="fragment highlight-red" data-fragment-index="2">video.mkv</span> ->
+                    <span class="fragment highlight-green" data-fragment-index="4">.git/annex/SHA256E-85...2ea2.mkv</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3>What we get...</h3>
+            <dl>
+              <div class="fragment">
+                <dt>Shallow clones by default</dt>
+                <dd>No archival data downloaded until requested.</dd>
+              </div>
+              <div class="fragment">
+                <dt>Narrow clones</dt>
+                <dd>Only the requested files are downloaded.</dd>
+              </div>
+              <div class="fragment">
+                <dt>File size (for Git)</dt>
+                <dd>Git never operates on the big annexed data, only on the lightweight symlinks.</dd>
+                <aside class="notes">
+                  <p>Did I lie about not needing to hash big files?</p>
+                  <ol>
+                    <li>Only Annex needs to hash them.</li>
+                    <li>With WORM even Annex doesn't do that.</li>
+                  </ol>
+                </aside>
+              </div>
+            </dl>
+          </section>
+          <section>
+            <h3>...and what we lose...</h3>
+            <dl>
+              <div class="fragment">
+                <dt>File modification</dt>
+                <dd>Files are read-only until explicitly "unlocked" to ensure the data integrity.</dd>
+              </div>
+              <div class="fragment">
+                <dt>Portability</dt>
+                <dd>On Windows filesystems "direct mode" is used instead of symlinks.</dd>
+              </div>
+              <div class="fragment">
+                <dt>Simplicity</dt>
+                <dd>Yet another abstraction layer.</dd>
+              </div>
+            </dl>
+          </section>
+        </section>
+        <section>
+          <h2>...and beyond!</h2>
+          <section>
+            <p>
+              Git Annex is much more than just a solution to Git's limitations.
+            </p>
+
+            <p>
+              Git Annex needs to know where the files are actually
+              stored. A lightweight registry with all files' locations
+              is stored in the Git objects. Even for the offline
+              repositories, even for the files we don't have locally.
+            </p>
+          </section>
+          <section>
+            <pre><code class="nohighlight" data-trim>
+vifon@hell-latitude ~/annex λ git annex whereis my-file.txt
+whereis my-file.txt (5 copies)
+        0c60bf3b-6d49-46eb-bc1e-324cd0c435f6 -- [server]
+        5784d71e-5ba0-4d35-a6b0-b1bcb0e49fed -- [NAS]
+        9cf5d522-7cc2-4ea9-883a-6a9d1fd83eb5 -- dell [here]
+        a5d11164-f0fb-49d0-9dfd-a11eaf745496 -- thinkpad
+        df2d03e7-53d0-439d-9b0b-27cdb4345319 -- [USB HDD]
+ok
+            </code></pre>
+          </section>
+        </section>
+        <section>
+          <h1>Thank you!</h1>
+        </section>
+	  </div>
+      <div class="footer">
+        <a href="https://linuxlab.pw">https://linuxlab.pw</a>
+      </div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+
+	<script>
+	 // More info about config & dependencies:
+	 // - https://github.com/hakimel/reveal.js#configuration
+	 // - https://github.com/hakimel/reveal.js#dependencies
+	 Reveal.initialize({
+	   dependencies: [
+		 { src: 'plugin/markdown/marked.js' },
+		 { src: 'plugin/markdown/markdown.js' },
+		 { src: 'plugin/notes/notes.js', async: true },
+		 { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+	   ],
+       history: true
+	 });
+	</script>
+  </body>
+</html>

@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>org-mode</title>
+<meta name="author" content="(Wojciech Siewierski)"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/2.6.2/css/reveal.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/2.6.2/css/theme/default.css" id="theme"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/reveal.js/2.6.2/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section>
+<h1>org-mode</h1>
+<h2>Wojciech Siewierski</h2>
+<h2></h2></section>
+<section>
+<h2>Table of Contents</h2><ul>
+<li>
+<a href="#sec-1">Czym jest <i>org-mode</i>?</a>
+<ul>
+<li>
+<a href="#sec-1-1">Dostosowanie Emacsa dla początkujących</a>
+</li>
+</ul>
+<li>
+<a href="#sec-2">Lista zadań</a>
+<ul>
+<li>
+<a href="#sec-2-1">Lista z "ptaszkami"</a>
+</li>
+</ul>
+<li>
+<a href="#sec-3">Nagłówki (ang. heading)</a>
+</li>
+<li>
+<a href="#sec-4">Nagłówki zadań</a>
+<ul>
+<li>
+<a href="#sec-4-1">Modyfikacja listy stanów zadań</a>
+</li>
+<li>
+<a href="#sec-4-2">Filtrowanie TODO</a>
+</li>
+<li>
+<a href="#sec-4-3">Śledzenie czasu</a>
+</li>
+</ul>
+<li>
+<a href="#sec-5">Zadania a pliki, cz.1: załączniki</a>
+</li>
+<li>
+<a href="#sec-6">Zadania a pliki, cz.2: odnośniki</a>
+</li>
+<li>
+<a href="#sec-7">Przykład (uproszczony z życia wzięty)</a>
+</li>
+<li>
+<a href="#sec-8">Inne zastosowania <i>org-mode</i></a>
+<ul>
+<li>
+<a href="#sec-8-1">Dokumenty i prezentacje</a>
+</li>
+<li>
+<a href="#sec-8-2">org-capture</a>
+</li>
+<li>
+<a href="#sec-8-3">org-agenda</a>
+</li>
+<li>
+<a href="#sec-8-4">Arkusze kalkulacyjne (sic!)</a>
+</li>
+</ul>
+</section>
+
+<section>
+<section id="sec-1" >
+
+<h2>Czym jest <i>org-mode</i>?</h2>
+<p>
+<i>org-mode</i> jest (między innymi) zaawansowanym systemem zarządzania
+zadaniami i czasem. <br  />
+  Wyróżnia go przechowywanie wszystkiego w formie tekstu (bez
+binarnych formatów) przy zachowaniu dużych możliwości. Może też być
+wykorzystywany jako język do markupu (ta prezentacja została właśnie
+w nim wykonana).
+</p>
+
+</section>
+<section>
+
+<p>
+<i>org-mode</i> jest częścią <i>GNU Emacsa</i> i działa wewnątrz niego, ale
+</p>
+<p class="fragment highlight-red">
+nie wymaga znajomości jego obsługi poza niezbędnym minimum. <br  />
+</p>
+<p>
+Jeśli ktoś już używa Emacsa do innych zadań, to tym lepiej. Jeśli
+nie, mimo wszystko warto się zapoznać z <i>org-mode</i>. <br  />
+</p>
+<p class="fragment roll-in">
+Do szeroko pojętego <i>todo</i> i tak prawdopodobnie musielibyśmy
+skorzystać z oddzielnego programu, więc sugerowałbym tutaj
+potraktować Emacsa jako środowisko uruchomieniowe, a sam <i>org-mode</i>
+jak program.
+</p>
+
+</section>
+<section id="sec-1-1" >
+
+<h3>Dostosowanie Emacsa dla początkujących</h3>
+<p>
+Żeby wygodnie edytować pliki <i>org-mode</i> w Emacsie, najlepiej
+włączyć <code>cua-mode</code> udostępniający skróty takie, jak ctrl+c, ctrl+v
+(Emacs jest starszy niż powszechne dziś skróty klawiszowe i jego
+domyślna klawiszologia może wydać się obca).
+</p>
+
+<p class="fragment">
+<code>M-x cua-mode</code>
+</p>
+</section>
+
+</section>
+<section>
+<section id="sec-2" >
+
+<h2>Lista zadań</h2>
+<p>
+Najprostszą (chciaż nie podstawową) strukturą używaną przez <i>org-mode</i> jest lista.
+</p>
+
+<div class="org-src-container">
+
+<pre  class="src src-org">- wyprowadzi&#263; psa
+- zrobi&#263; zakupy
+  - kupi&#263; mleko
+  - kupi&#263; chleb
+- prace domowe
+  - zrobi&#263; pranie
+  - umy&#263; naczynia
+  - odebra&#263; poczt&#281;
+</pre>
+</div>
+
+<p>
+Klawisze:
+</p>
+<dl class="org-dl">
+<dt><b>nowa pozycja</b></dt><dd><code>M-Enter</code>
+</dd>
+<dt><b>wcięcie pozycji</b></dt><dd><code>M-Right</code>
+</dd>
+<dt><b>cofnięcie wcięcia</b></dt><dd><code>M-Left</code>
+</dd>
+</dl>
+
+</section>
+<section id="sec-2-1" >
+
+<h3>Lista z "ptaszkami"</h3>
+<p>
+Niewielkim wysiłkiem można naszą listę wzbogacić o "ptaszki".
+Wystarczy dodać <code>[ ]</code>.
+</p>
+
+<div class="org-src-container">
+
+<pre  class="src src-org">- <span style="color: #FFFFEF; background-color: #5F5F5F; font-weight: bold;">[ ]</span> wyprowadzi&#263; psa
+- <span style="color: #AFD8AF; font-weight: bold;">[2/2]</span> zrobi&#263; zakupy
+  - <span style="color: #FFFFEF; background-color: #5F5F5F; font-weight: bold;">[X]</span> kupi&#263; mleko
+  - <span style="color: #FFFFEF; background-color: #5F5F5F; font-weight: bold;">[X]</span> kupi&#263; chleb
+- <span style="color: #CC9393; font-weight: bold;">[33%]</span> prace domowe
+  - <span style="color: #FFFFEF; background-color: #5F5F5F; font-weight: bold;">[ ]</span> zrobi&#263; pranie
+  - <span style="color: #FFFFEF; background-color: #5F5F5F; font-weight: bold;">[X]</span> umy&#263; naczynia
+  - <span style="color: #FFFFEF; background-color: #5F5F5F; font-weight: bold;">[ ]</span> odebra&#263; poczt&#281;
+</pre>
+</div>
+
+<p>
+Jeśli wewnątrz <code>[ ]</code> umieścimy <code>/</code> bądź <code>%</code>, to otrzymamy
+podsumowanie wszystkich podzadań w jednym z dwóch formatów. Jeśli
+pozostawimy pusty nawias w elemencie-rodzicu, zaznaczy się on sam
+gdy wykonane zostaną zadania potomne.
+</p>
+
+<p>
+Nowy element listy będący zadaniem do wykonania wstawiamy
+<code>M-S-Enter</code>.
+</p>
+
+</section>
+<section>
+
+<p>
+Pól nie musimy zaznaczać ręcznie. Można je zaznaczać i odznaczać
+skrótem <code>C-c C-c</code> &#x2013; podwójnym wciśnięciem ctrl+c
+</p>
+
+<p class="fragment roll-in">
+Warto jednak pamiętać, że wszystko to nadal jest zwykłym tekstem i
+możemy poprawki nanieść ręcznie, jeśli przyjdzie taka potrzeba.
+</p>
+</section>
+
+</section>
+<section>
+<section id="sec-3" >
+
+<h2>Nagłówki (ang. heading)</h2>
+<p>
+Prawdziwym sercem <i>org-mode</i> są, podobne do list, ale dużo
+potężniejsze, nagłówki.
+</p>
+
+<div class="org-src-container">
+
+<pre  class="src src-org"><span style="color: #DFAF8F;">* nag&#322;&#243;wek</span>
+<span style="color: #BFEBBF;">** podnag&#322;&#243;wek</span>
+<span style="color: #BFEBBF;">** drugi podnag&#322;&#243;wek</span>
+   tekst nale&#380;&#261;cy do drugiego podnag&#322;&#243;wka
+<span style="color: #BFEBBF;">** trzeci podnag&#322;&#243;wek</span>
+<span style="color: #DFAF8F;">* drugi nag&#322;owek</span>
+</pre>
+</div>
+
+<p>
+Nagłówki mogą być dowolnie głęboko zagnieżdżane. <br  />
+  Pierwsza ważna różnica między nagłówkami a listami, to domyślny stan
+"zwinięcia". Gdy otworzymy istniejący plik .org, zobaczymy tylko
+nagłówki najwyższego poziomu, które możemy rozwinąć wciskając <code>Tab</code>.
+</p>
+
+</section>
+<section>
+
+<p>
+Nagłówek może zawierać w sobie dowolne inne struktury <i>org-mode</i>,
+np. listy.
+</p>
+
+<div class="org-src-container">
+
+<pre  class="src src-org"><span style="color: #DFAF8F;">* nag&#322;&#243;wek</span>
+<span style="color: #BFEBBF;">** podnag&#322;&#243;wek</span>
+   - lista
+   - lista cd.
+   - <span style="color: #FFFFEF; background-color: #5F5F5F; font-weight: bold;">[ ]</span> nadal lista
+</pre>
+</div>
+
+<p>
+Nagłówki wstawiamy i manipulujemy nimi tak samo, jak było z
+elementami listy: <code>M-Enter</code> etc.
+</p>
+</section>
+
+</section>
+<section>
+<section id="sec-4" >
+
+<h2>Nagłówki zadań</h2>
+<p>
+Do tej pory przedstawione check-listy pozwalają oznaczać listę
+wykonanych i niewykonanych zadań, ale niewiele ponad to. Jeśli
+chcemy większych możliwości, możemy zrealizować listę zadań przy
+pomocy nagłówków.
+</p>
+
+<div class="org-src-container">
+
+<pre  class="src src-org"><span style="color: #DFAF8F;">* </span><span style="color: #CC9393; font-weight: bold;">TODO</span><span style="color: #DFAF8F;"> wyprowadzi&#263; psa</span>
+<span style="color: #DFAF8F;">* </span><span style="color: #AFD8AF; font-weight: bold;">[2/2]</span><span style="color: #DFAF8F;"> zrobi&#263; zakupy</span>
+<span style="color: #BFEBBF;">** </span><span style="color: #AFD8AF; font-weight: bold;">DONE</span><span style="color: #BFEBBF;"> kupi&#263; mleko</span>
+<span style="color: #BFEBBF;">** </span><span style="color: #AFD8AF; font-weight: bold;">DONE</span><span style="color: #BFEBBF;"> kupi&#263; chleb</span>
+<span style="color: #DFAF8F;">* </span><span style="color: #CC9393; font-weight: bold;">[33%]</span><span style="color: #DFAF8F;"> prace domowe</span>
+<span style="color: #BFEBBF;">** </span><span style="color: #CC9393; font-weight: bold;">TODO</span><span style="color: #BFEBBF;"> zrobi&#263; pranie</span>
+<span style="color: #BFEBBF;">** </span><span style="color: #AFD8AF; font-weight: bold;">DONE</span><span style="color: #BFEBBF;"> umy&#263; naczynia</span>
+<span style="color: #BFEBBF;">** </span><span style="color: #CC9393; font-weight: bold;">TODO</span><span style="color: #BFEBBF;"> odebra&#263; poczt&#281;</span>
+</pre>
+</div>
+
+<p>
+Jak można zauważyć, zamiast kratek z 'X', stosujemy słowa kluczowe
+"TODO" i "DONE". Ich stan zmienia się dość rozwlekłą kombinacją <code>C-c
+  C-t</code>. Może się to wydawać nieczytelne i niewygodne, ale taka forma
+jest dużo bardziej konfigurowalna.
+</p>
+
+<p>
+Nagłówek typu TODO wstawiamy analogicznie jak w przypadku list:
+<code>M-S-Enter</code>
+</p>
+
+</section>
+<section id="sec-4-1" >
+
+<h3>Modyfikacja listy stanów zadań</h3>
+<p>
+Domyślnie zadanie może znajdować się w dwóch stanach: TODO albo
+DONE. Listę tę można dowolnie zmodyfikować linią zaczynającą się od
+"#+TODO:". Osobiście stosuję następującą listę:
+</p>
+<div class="org-src-container">
+
+<pre  class="fragment roll-in"><span style="color: #7F9F7F;">#+TODO: TODO(t) MAYBE(m) | WAITING(w@) DONE(d!/@) ABORTED(a@/@)</span>
+</pre>
+</div>
+
+<p class="fragment roll-in">
+Stany przed pionową kreską są uznawane za nieukończone, a stany za
+nią &#x2013; za ukończone. Litery w nawiasach oznaczają klawisze skrótu
+(wciskane po <code>C-c C-t</code>), które ustawiają dany stan.
+</p>
+
+</section>
+<section>
+
+<div class="org-src-container">
+
+<pre  class="src src-org"><span style="color: #7F9F7F;">#+TODO: TODO(t) MAYBE(m) | WAITING(w@) DONE(d!/@) ABORTED(a@/@)</span>
+</pre>
+</div>
+<p>
+Za literami stoją przy niektórych stanach specjalne flagi. <br  />
+</p>
+<p class="fragment roll-in">
+Wykrzyknik oznacza, że chcemy, żeby została zalogowana data i
+godzina ustawienia takiego stanu (czyli np. informacja, kiedy
+ukończyliśmy dane zadanie). <br  />
+</p>
+<p class="fragment roll-in">
+Małpa oznacza to samo, a ponad to poprosi nas o komentarz do zmiany
+(np. informacja, dlaczego rezygnujemy z zadania albo na co
+oczekujemy). <br  />
+</p>
+<p class="fragment roll-in">
+Slash mówi, że chcemy flagę za nim stojącą zastosować do stanu, do
+którego przejdziemy z tego stanu, jeśli to zrobimy (np. dlaczego
+jednak uznaliśmy zadanie za niedokończone).
+</p>
+
+</section>
+<section id="sec-4-2" >
+
+<h3>Filtrowanie TODO</h3>
+<p>
+Jeśli chcemy wyświetlić wszystkie zadania, które wymagają uwagi,
+możemy wcisnąć <code>C-c / t</code>. Włącza to funkcję zwaną w ogólności
+<i>sparse tree</i>. W tym przypadku ogranicza widoczne nagłówki do zadań
+oczekujących na wykonanie.
+</p>
+
+</section>
+<section id="sec-4-3" >
+
+<h3>Śledzenie czasu</h3>
+<p>
+Jeśli pracujemy nad jakimś zadaniem dłużej, możemy chcieć
+zapisywać, kiedy i jak długo nad nim pracowaliśmy.
+</p>
+
+<p class="fragment roll-in">
+Takie informacje możemy przypisać do nagłowka. Aby oznaczyć
+rozpoczęcie pracy nad zadaniem, wciskamy <code>C-c C-x C-i</code>. Gdy skończymy
+pracować, wciskamy <code>C-c C-x C-o</code>. Potem można, na przykład, z tak
+zapisanego czasu pracy wygenerować raport w formie tabelki.
+</p>
+</section>
+
+</section>
+<section>
+<section id="sec-5" >
+
+<h2>Zadania a pliki, cz.1: załączniki</h2>
+<p>
+Zdarza się, że wykonywane zadanie dotyczy jakichś plików
+zewnętrznych. <i>org-mode</i> umożliwia powiązanie tych plików z zadaniem
+na kilka sposobów. Pierwszym z nich są załączniki.
+</p>
+
+</section>
+<section>
+
+<p>
+Skrótem <code>C-c C-a</code> otwieramy menu operacji na załącznikach. Wciskając
+'m' wybieramy opcję przeniesienia pliku z innego miejsca. Jest też
+opcja kopiowania bądź skorzystania z symlinków lub hardlinków.
+</p>
+
+<p class="fragment roll-in">
+Od tego momentu mamy dostęp do tych plików z poziomu zadania, a
+pliki znajdują w jednym dedykowanym miejscu, więc nam się nie
+zgubią.
+</p>
+
+<p class="fragment roll-in">
+Wszystkie przydatne operacje na załącznikach są dostępne w menu
+wspomnianym wcześniej.
+</p>
+</section>
+
+</section>
+<section>
+<section id="sec-6" >
+
+<h2>Zadania a pliki, cz.2: odnośniki</h2>
+<p>
+Drugim sposobem na powiązanie plików (i nie tylko) z zadaniem jest
+użycie odnośników.
+</p>
+
+<p class="fragment roll-in">
+Odnośnik może wskazywać nie tylko na pliki, ale też na strony
+internetowe, inne nagłówki <i>org-mode</i>, emaile, a nawet kod
+wykonywalny.
+</p>
+
+<p class="fragment roll-in">
+Odnośnik tworzymy klawiszami <code>C-c C-l</code>. Tak samo też edytujemy.
+Otwarcie odnośnika umoźliwia skrót <code>C-c C-o</code>.
+</p>
+
+</section>
+<section>
+
+<p>
+Odnośniki można w praktyce zastosować np. do tworzenia notatek do
+analizowanego kodu. Odnośnik do pliku może określać nam nie tylko
+plik, ale i linię, a więc możemy tworzyć komentarze do wybranych
+linii bez modyfikacji samych plików z kodem.
+</p>
+</section>
+
+</section>
+<section>
+<section id="sec-7" >
+
+<h2>Przykład (uproszczony z życia wzięty)</h2>
+<p>
+Załóżmy, że zamówiliśmy nowy telefon z Androidem i planujemy go
+zrootować od razu jak do nas dotrze. <br  />
+</p>
+<p class="fragment roll-in">
+Możemy utworzyć zadanie "Zamówić i zrootować telefon", ustawić mu
+stan WAITING, dodać jako załączniki wszystkie pliki, które będą nam
+potrzebne do rootowania telefonu (zakładając, że przygotujemy je
+sobie zawczasu), a na koniec dodamy odnośnik do strony z
+przewodnikiem jak się za nie zabrać. <br  />
+</p>
+<p class="fragment roll-in">
+W międzyczasie możemy gdzieś w ramach tego samego nagłówka zanotować
+numer przewozowy przesyłki z telefonem, a nawet zrobić z niego
+odnośnik czy to do maila, w którym go dostaliśmy, czy to do strony
+gdzie możemy śledzić przesyłkę.
+</p>
+
+</section>
+<section>
+
+<p>
+Tym sposobem, mamy zgromadzone w jednym miejscu wszystkie informacje
+i materiały dotyczące tego zadania. Dzięki temu możemy skupić się na
+realizacji planów, a nie na szukaniu skrawków zadania po dysku.
+</p>
+</section>
+
+</section>
+<section>
+<section id="sec-8" >
+
+<h2>Inne zastosowania <i>org-mode</i></h2>
+<p>
+Tak jak wspomniałem, <i>org-mode</i> ma też kilka innych zastosowań. <br  />
+  Tym razem już bez przykładów zastosowania, żeby nie przerazić.
+</p>
+
+</section>
+<section id="sec-8-1" >
+
+<h3>Dokumenty i prezentacje</h3>
+<p>
+Plik .org można wyeksportować do bardzo wielu formatów. Od LaTeX-a,
+przez HTML po widoczną tu prezentację. Wręcz można używać wielu
+symboli LaTeX-a (np. &Omega; możemy zapisać <code>\Omega</code>) bezpośrednio w
+pliku .org. <br  />
+   Dzięki temu, znając chciażby częściowo format <i>org-mode</i>, często
+nie musimy się uczyć innych formatów.
+</p>
+
+</section>
+<section id="sec-8-2" >
+
+<h3>org-capture</h3>
+<p>
+<i>org-capture</i> jest wygodnym mechanizmem tworzenia konfigurowalnych
+notatek w trakcie wykonywania dowolnej innej pracy w Emacsie.
+Docenią przede wszystkim dotychczasowi użytkownicy Emacsa.
+</p>
+
+</section>
+<section id="sec-8-3" >
+
+<h3>org-agenda</h3>
+<p>
+<i>org-agenda</i> agreguje i wyświetla w przystępny sposób wszystkie
+zaplanowane zadania, żeby ułatwić wybór co powinno zostać zrobione
+pierwsze. Ich posortowanie jest głównie chronologiczne, ale zależy
+też od czynników takich jak ustawiony priorytet czy zbliżający się
+deadline.
+</p>
+
+</section>
+<section id="sec-8-4" >
+
+<h3>Arkusze kalkulacyjne (sic!)</h3>
+<p>
+Zgadza się, <i>org-mode</i> zawiera opcję tworzenia arkuszy
+kalkulacyjnych. One również są zapisywane w formacie tekstowym, a
+więc można je odczytać (choć o "inteligentnej" edycji nie może być
+mowy) dowolnym edytorem. Są zadziwiająco rozbudowane i są świetnym
+pokazem "siły" tego pakietu.
+</p>
+</section>
+</section>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/reveal.js/2.6.2/lib/js/head.min.js"></script>
+<script src="https://cdn.jsdelivr.net/reveal.js/2.6.2/js/reveal.min.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: true,
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/reveal.js/2.6.2/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/reveal.js/2.6.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/reveal.js/2.6.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/reveal.js/2.6.2/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: 'https://cdn.jsdelivr.net/reveal.js/2.6.2/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/reveal.js/2.6.2/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+]
+});
+</script>
+</body>
+</html>
