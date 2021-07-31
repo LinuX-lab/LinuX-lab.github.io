@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Linu.X-lab - Spotkania</title><link href="https://linuxlab.pw/" rel="alternate"></link><link href="https://linuxlab.pw/feeds/spotkania.atom.xml" rel="self"></link><id>https://linuxlab.pw/</id><updated>2021-01-08T12:00:00+01:00</updated><entry><title>Styczeń 2021</title><link href="https://linuxlab.pw/2021/01/styczen-2021.html" rel="alternate"></link><published>2021-01-08T12:00:00+01:00</published><updated>2021-01-08T12:00:00+01:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2021-01-08:/2021/01/styczen-2021.html</id><summary type="html">&lt;p&gt;Kolejne zdalne spotkanie już 15 stycznia.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Linu.X-lab - Spotkania</title><link href="https://linuxlab.pw/" rel="alternate"></link><link href="https://linuxlab.pw/feeds/spotkania.atom.xml" rel="self"></link><id>https://linuxlab.pw/</id><updated>2021-07-31T17:10:00+02:00</updated><entry><title>Sierpień 2021</title><link href="https://linuxlab.pw/2021/07/sierpien-2021.html" rel="alternate"></link><published>2021-07-31T17:10:00+02:00</published><updated>2021-07-31T17:10:00+02:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2021-07-31:/2021/07/sierpien-2021.html</id><summary type="html">&lt;p&gt;Ostatnio coś
+&lt;abbr title="i przez &amp;quot;nam&amp;quot; mam na myśli &amp;quot;mnie&amp;quot;"&gt;nam&lt;/abbr&gt;
+nie wychodzą regularne spotkania.  Regularnie czy nie,
+najwyższa pora na kolejne, w piątek 6 sierpnia.&lt;/p&gt;
+&lt;p&gt;Na spotkaniu poza zwyczajową luźną rozmową, chciałbym opowiedzieć
+o moich doświadczeniach z ZFS na Linuksie.  Czy są problemy, jakie są
+zalety (i wady) względem klasycznego &lt;code&gt;ext4&lt;/code&gt;, jak się ma do &lt;code&gt;btrfs&lt;/code&gt;,
+oraz …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Ostatnio coś
+&lt;abbr title="i przez &amp;quot;nam&amp;quot; mam na myśli &amp;quot;mnie&amp;quot;"&gt;nam&lt;/abbr&gt;
+nie wychodzą regularne spotkania.  Regularnie czy nie,
+najwyższa pora na kolejne, w piątek 6 sierpnia.&lt;/p&gt;
+&lt;p&gt;Na spotkaniu poza zwyczajową luźną rozmową, chciałbym opowiedzieć
+o moich doświadczeniach z ZFS na Linuksie.  Czy są problemy, jakie są
+zalety (i wady) względem klasycznego &lt;code&gt;ext4&lt;/code&gt;, jak się ma do &lt;code&gt;btrfs&lt;/code&gt;,
+oraz wreszcie czy warto.&lt;/p&gt;
+&lt;p&gt;Start spotkania w piątek o 17:00 na &lt;a href="https://meet.jit.si/Linu.X-dom"&gt;https://meet.jit.si/Linu.X-dom&lt;/a&gt;.
+Mikrofon mile widziany (aczkolwiek &amp;ldquo;wolnych słuchaczy&amp;rdquo; też zapraszam),
+kamera wedle uznania.  Start prezentacji zależnie od tego, kiedy się
+zbierze masa krytyczna.&lt;/p&gt;
+&lt;p&gt;Do usłyszenia!&lt;/p&gt;</content><category term="Spotkania"></category></entry><entry><title>Styczeń 2021</title><link href="https://linuxlab.pw/2021/01/styczen-2021.html" rel="alternate"></link><published>2021-01-08T12:00:00+01:00</published><updated>2021-01-08T12:00:00+01:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2021-01-08:/2021/01/styczen-2021.html</id><summary type="html">&lt;p&gt;Kolejne zdalne spotkanie już 15 stycznia.&lt;/p&gt;
 &lt;p&gt;Na spotkaniu prelekcję poprowadzi po raz kolejny Łukasz Posadowski,
 tym razem o temacie &amp;ldquo;Ansible na wypasie, czyli: helpery, pętle,
 warunki i wspólne playbooki dla kilku dystrybucji Linuksa i czasami
