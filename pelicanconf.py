@@ -9,7 +9,7 @@ SITEURL = ''
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
 ARTICLE_SAVE_AS = ARTICLE_URL
 
-OUTPUT_RETENTION = ['.git']
+OUTPUT_RETENTION = ['.git', 'CNAME']
 
 SLUGIFY_SOURCE = 'title'
 

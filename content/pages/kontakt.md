@@ -1,10 +1,7 @@
 Title: Kontakt
 
-Zapraszamy do zapisania się na naszą [listę mailingową](https://linuxlab.pw/cgi-bin/mailman/listinfo/lwb "Zapisz się na naszą listę mailingową").
+Zapraszamy do zapisania się na naszą [listę mailingową](https://buttondown.email/linuxlab-pw).
 
-Kontakt w sprawach organizacyjnych możliwy jest pod adresem:  
-kontakt [at] lwb [dot] linuxlab [dot] pw
+Można też nas znaleźć na IRC-u: [#linuxlab-pw na irc.libera.chat][1]
 
-Można też nas znaleźć na IRC-u: [#linuxlab-pw na irc.freenode.net][1]
-
-[1]: https://webchat.freenode.net/?channels=#linuxlab-pw
+[1]: https://web.libera.chat/#linuxlab-pw
