@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Linu.X-lab - Spotkania</title><link href="https://linuxlab.pw/" rel="alternate"></link><link href="https://linuxlab.pw/feeds/spotkania.atom.xml" rel="self"></link><id>https://linuxlab.pw/</id><updated>2021-07-31T17:10:00+02:00</updated><entry><title>Sierpień 2021</title><link href="https://linuxlab.pw/2021/07/sierpien-2021.html" rel="alternate"></link><published>2021-07-31T17:10:00+02:00</published><updated>2021-07-31T17:10:00+02:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2021-07-31:/2021/07/sierpien-2021.html</id><summary type="html">&lt;p&gt;Ostatnio coś
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Linu.X-lab - Spotkania</title><link href="https://linuxlab.pw/" rel="alternate"></link><link href="https://linuxlab.pw/feeds/spotkania.atom.xml" rel="self"></link><id>https://linuxlab.pw/</id><updated>2021-08-14T14:00:00+02:00</updated><entry><title>Wrzesień 2021</title><link href="https://linuxlab.pw/2021/08/wrzesien-2021.html" rel="alternate"></link><published>2021-08-14T14:00:00+02:00</published><updated>2021-08-14T14:00:00+02:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2021-08-14:/2021/08/wrzesien-2021.html</id><summary type="html">&lt;p&gt;Kolejne spotkanie planujemy na 3 września.&lt;/p&gt;
+&lt;p&gt;Od naszego prelegenta, Łukasza Posadowskiego:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Zapraszam na warsztaty z fail2ban, czyli narzędziem automatycznie
+sterującym firewallem na podstawie logów serwera www, ftp, journala
+i wielu innych. Wszyscy obecni dostaną konto na publicznym (ale
+testowym) serwerze z kilkoma stronami na Wordpressie i przebijemy się
+przez konfigurację …&lt;/p&gt;&lt;/blockquote&gt;</summary><content type="html">&lt;p&gt;Kolejne spotkanie planujemy na 3 września.&lt;/p&gt;
+&lt;p&gt;Od naszego prelegenta, Łukasza Posadowskiego:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Zapraszam na warsztaty z fail2ban, czyli narzędziem automatycznie
+sterującym firewallem na podstawie logów serwera www, ftp, journala
+i wielu innych. Wszyscy obecni dostaną konto na publicznym (ale
+testowym) serwerze z kilkoma stronami na Wordpressie i przebijemy się
+przez konfigurację fail2ban dla:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;stron wp-login.php,&lt;/li&gt;
+&lt;li&gt;htpasswd dla stron wp-login.php,&lt;/li&gt;
+&lt;li&gt;kont ftp,&lt;/li&gt;
+&lt;li&gt;strony phpyadmin,&lt;/li&gt;
+&lt;li&gt;wycinania ruchu szukającego gita, phpmyadmina, oraz skanującego xmlrpc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Zobaczymy też, jak fail2ban może:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;wpływać na (nie)skuteczność ataków DDoS,&lt;/li&gt;
+&lt;li&gt;uniemożliwić, lub bardzo utrudnić przeglądanie stron, kiedy źle się go skonfiguruje.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pokażę też prototyp skryptu Basha, który zajmuje się rozprowadzaniem
+zbanowanych adresów IP na kilka hostów. Może komuś się przyda, albo
+wspólnie go dopracujemy.&lt;/p&gt;
+&lt;p&gt;3 IX 2021, godzina 17:30-19:30 (a potem pogaduchy)&lt;br&gt;
+https://meet.jit.si/Linu.X-dom&lt;/p&gt;
+&lt;p&gt;Łukasz&lt;/p&gt;
+&lt;/blockquote&gt;</content><category term="Spotkania"></category></entry><entry><title>Sierpień 2021</title><link href="https://linuxlab.pw/2021/07/sierpien-2021.html" rel="alternate"></link><published>2021-07-31T17:10:00+02:00</published><updated>2021-07-31T17:10:00+02:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2021-07-31:/2021/07/sierpien-2021.html</id><summary type="html">&lt;p&gt;Ostatnio coś
 &lt;abbr title="i przez &amp;quot;nam&amp;quot; mam na myśli &amp;quot;mnie&amp;quot;"&gt;nam&lt;/abbr&gt;
 nie wychodzą regularne spotkania.  Regularnie czy nie,
 najwyższa pora na kolejne, w piątek 6 sierpnia.&lt;/p&gt;
