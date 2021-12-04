@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Linu.X-lab</title><link href="https://linuxlab.pw/" rel="alternate"></link><link href="https://linuxlab.pw/feeds/all.atom.xml" rel="self"></link><id>https://linuxlab.pw/</id><updated>2021-08-14T14:00:00+02:00</updated><entry><title>Wrzesień 2021</title><link href="https://linuxlab.pw/2021/08/wrzesien-2021.html" rel="alternate"></link><published>2021-08-14T14:00:00+02:00</published><updated>2021-08-14T14:00:00+02:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2021-08-14:/2021/08/wrzesien-2021.html</id><summary type="html">&lt;p&gt;Kolejne spotkanie planujemy na 3 września.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Linu.X-lab</title><link href="https://linuxlab.pw/" rel="alternate"></link><link href="https://linuxlab.pw/feeds/all.atom.xml" rel="self"></link><id>https://linuxlab.pw/</id><updated>2021-12-04T22:40:00+01:00</updated><entry><title>Grudzień 2021</title><link href="https://linuxlab.pw/2021/12/grudzien-2021.html" rel="alternate"></link><published>2021-12-04T22:40:00+01:00</published><updated>2021-12-04T22:40:00+01:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2021-12-04:/2021/12/grudzien-2021.html</id><summary type="html">&lt;p&gt;Kolejne spotkanie już za tydzień, 10 grudnia.&lt;/p&gt;
+&lt;p&gt;Zapraszamy na przejażdżkę Neostradą TP po roku 2005.  Pokażemy jak to
+wtedy działało, podzielimy się wspomnienami z infolinii technicznej
+Telekomunikacji oraz zrobimy router na Pentium 120 i 1.44
+megabajtach dysku.  To wszystko i jeszcze więcej pokaże nam Łukasz Posadowski.&lt;/p&gt;
+&lt;p&gt;Spotkanie 10.12 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Kolejne spotkanie już za tydzień, 10 grudnia.&lt;/p&gt;
+&lt;p&gt;Zapraszamy na przejażdżkę Neostradą TP po roku 2005.  Pokażemy jak to
+wtedy działało, podzielimy się wspomnienami z infolinii technicznej
+Telekomunikacji oraz zrobimy router na Pentium 120 i 1.44
+megabajtach dysku.  To wszystko i jeszcze więcej pokaże nam Łukasz Posadowski.&lt;/p&gt;
+&lt;p&gt;Spotkanie 10.12.2021, start prezentacji ok. 17:30 (wcześniej i później
+będą standardowo pogaduchy).&lt;br&gt;
+https://meet.jit.si/Linu.X-dom&lt;/p&gt;</content><category term="Spotkania"></category></entry><entry><title>Wrzesień 2021</title><link href="https://linuxlab.pw/2021/08/wrzesien-2021.html" rel="alternate"></link><published>2021-08-14T14:00:00+02:00</published><updated>2021-08-14T14:00:00+02:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2021-08-14:/2021/08/wrzesien-2021.html</id><summary type="html">&lt;p&gt;Kolejne spotkanie planujemy na 3 września.&lt;/p&gt;
 &lt;p&gt;Od naszego prelegenta, Łukasza Posadowskiego:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Zapraszam na warsztaty z fail2ban, czyli narzędziem automatycznie
