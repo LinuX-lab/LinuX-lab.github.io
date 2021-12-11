@@ -51,7 +51,7 @@ AUTHOR_FEED_RSS = None
 # Social widget
 # SOCIAL = (('You can add links in your config file', '#'),
 #           ('Another social link', '#'),)
-SOCIAL = (('Lista mailingowa', 'http://linuxlab.pw/cgi-bin/mailman/listinfo/lwb'),)
+SOCIAL = (('Lista mailingowa', 'https://buttondown.email/linuxlab-pw'),)
 
 # DEFAULT_PAGINATION = False
 
