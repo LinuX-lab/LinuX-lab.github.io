@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Linu.X-lab</title><link href="https://linuxlab.pw/" rel="alternate"></link><link href="https://linuxlab.pw/feeds/all.atom.xml" rel="self"></link><id>https://linuxlab.pw/</id><updated>2021-12-04T22:40:00+01:00</updated><entry><title>Grudzień 2021</title><link href="https://linuxlab.pw/2021/12/grudzien-2021.html" rel="alternate"></link><published>2021-12-04T22:40:00+01:00</published><updated>2021-12-04T22:40:00+01:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2021-12-04:/2021/12/grudzien-2021.html</id><summary type="html">&lt;p&gt;Kolejne spotkanie już za tydzień, 10 grudnia.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Linu.X-lab</title><link href="https://linuxlab.pw/" rel="alternate"></link><link href="https://linuxlab.pw/feeds/all.atom.xml" rel="self"></link><id>https://linuxlab.pw/</id><updated>2022-06-22T22:55:00+02:00</updated><entry><title>Lipiec 2022</title><link href="https://linuxlab.pw/2022/06/lipiec-2022.html" rel="alternate"></link><published>2022-06-22T22:55:00+02:00</published><updated>2022-06-22T22:55:00+02:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2022-06-22:/2022/06/lipiec-2022.html</id><summary type="html">&lt;p&gt;Są dobre wieści!  Nasz stały bywalec, Łukasz Posadowski, znalazł nam
+nowe miejsce na spotkania.&lt;/p&gt;
+&lt;p&gt;Zapraszamy do nowego &amp;mdash; mamy nadzieję, że stałego &amp;mdash; miejsca
+spotkań.  Jest nim &amp;ldquo;Klub Dżentelmenów&amp;rdquo; przy ulicy Chmielnej 122.
+Gausus, czyli nasz gospodarz, przedstawi prezentację &amp;ldquo;Jak z małego
+problemu zrobić duży kryzys - czyli o błędach w reagowaniu na …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Są dobre wieści!  Nasz stały bywalec, Łukasz Posadowski, znalazł nam
+nowe miejsce na spotkania.&lt;/p&gt;
+&lt;p&gt;Zapraszamy do nowego &amp;mdash; mamy nadzieję, że stałego &amp;mdash; miejsca
+spotkań.  Jest nim &amp;ldquo;Klub Dżentelmenów&amp;rdquo; przy ulicy Chmielnej 122.
+Gausus, czyli nasz gospodarz, przedstawi prezentację &amp;ldquo;Jak z małego
+problemu zrobić duży kryzys - czyli o błędach w reagowaniu na
+incydenty IT&amp;rdquo;.  Z kolei Łukasz opowie jak skonfigurować Nitrokey Start
+tak, żeby było dobrze.&lt;/p&gt;
+&lt;p&gt;Nie byłem jeszcze na miejscu, ani nie miałem przyjemności poznać
+Gaususa osobiście, ale z tego co widzę w Internecie, miejsce wygląda
+na przytulne.&lt;/p&gt;
+&lt;p&gt;Spotkanie 1.07.2022, start prezentacji ok. 18:00 (wcześniej i później
+będą standardowo pogaduchy).  Myślę, że zbierać możemy się od
+ok. 17:00&amp;ndash;17:30.&lt;/p&gt;</content><category term="Spotkania"></category></entry><entry><title>Grudzień 2021</title><link href="https://linuxlab.pw/2021/12/grudzien-2021.html" rel="alternate"></link><published>2021-12-04T22:40:00+01:00</published><updated>2021-12-04T22:40:00+01:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2021-12-04:/2021/12/grudzien-2021.html</id><summary type="html">&lt;p&gt;Kolejne spotkanie już za tydzień, 10 grudnia.&lt;/p&gt;
 &lt;p&gt;Zapraszamy na przejażdżkę Neostradą TP po roku 2005.  Pokażemy jak to
 wtedy działało, podzielimy się wspomnienami z infolinii technicznej
 Telekomunikacji oraz zrobimy router na Pentium 120 i 1.44
