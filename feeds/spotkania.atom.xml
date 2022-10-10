@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Linu.X-lab - Spotkania</title><link href="https://linuxlab.pw/" rel="alternate"></link><link href="https://linuxlab.pw/feeds/spotkania.atom.xml" rel="self"></link><id>https://linuxlab.pw/</id><updated>2022-08-17T23:30:00+02:00</updated><entry><title>Sierpień 2022</title><link href="https://linuxlab.pw/2022/08/sierpien-2022.html" rel="alternate"></link><published>2022-08-17T23:30:00+02:00</published><updated>2022-08-17T23:30:00+02:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2022-08-17:/2022/08/sierpien-2022.html</id><summary type="html">&lt;p&gt;Kolejne spotkanie już w przyszłym tygodniu.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Linu.X-lab - Spotkania</title><link href="https://linuxlab.pw/" rel="alternate"></link><link href="https://linuxlab.pw/feeds/spotkania.atom.xml" rel="self"></link><id>https://linuxlab.pw/</id><updated>2022-10-10T14:10:00+02:00</updated><entry><title>Październik 2022</title><link href="https://linuxlab.pw/2022/10/pazdziernik-2022.html" rel="alternate"></link><published>2022-10-10T14:10:00+02:00</published><updated>2022-10-10T14:10:00+02:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2022-10-10:/2022/10/pazdziernik-2022.html</id><content type="html">&lt;p&gt;Zapraszamy na spotkanie 14.10.2022 w Klubie przy ulicy Chmielnej 122.
+W programie: produkcyjne wdrożenie routera z Freesco na maszynie
+Pentium 120 oraz reanimacja kilku starych serwerów. Wszystko będzie na
+miejscu, ale można zabrać narzędzia oraz płytki z SysRescueCD.
+Start o 17:30.&lt;/p&gt;
+&lt;p&gt;Zdjęcia poglądowe:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="https://wiki.baszarek.pl/lib/exe/fetch.php?cache=&amp;amp;media=wiki:img_20221007_203653261.jpg"&gt;
+&lt;img alt="" src="https://wiki.baszarek.pl/lib/exe/fetch.php?cache=&amp;amp;media=wiki:img_20221008_003100586.jpg"&gt;
+&lt;img alt="" src="https://wiki.baszarek.pl/lib/exe/fetch.php?cache=&amp;amp;media=wiki:img_20221008_003108520.jpg"&gt;
+&lt;img alt="" src="https://wiki.baszarek.pl/lib/exe/fetch.php?cache=&amp;amp;media=wiki:img_20221008_003135379.jpg"&gt;&lt;/p&gt;</content><category term="Spotkania"></category></entry><entry><title>Sierpień 2022</title><link href="https://linuxlab.pw/2022/08/sierpien-2022.html" rel="alternate"></link><published>2022-08-17T23:30:00+02:00</published><updated>2022-08-17T23:30:00+02:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2022-08-17:/2022/08/sierpien-2022.html</id><summary type="html">&lt;p&gt;Kolejne spotkanie już w przyszłym tygodniu.&lt;/p&gt;
 &lt;p&gt;Spotkanie znów w piwnicy &amp;ldquo;Klub Dżentelmenów&amp;rdquo; przy ulicy Chmielnej 122.
 Postaramy się zorganizować prowizoryczne oznaczenia jak dotrzeć, bo
 ostatnim razem sam ledwo trafiłem.&lt;/p&gt;
