@@ -20,6 +20,7 @@ do tej pory w ramach Linu.X-labu:
 praktyki. Wzorce i antywzorce. Przykłady wykorzystania][16] --- Kamil Zabielski
 - 2019-04-05: [Wprowadzenie do języka Rust][17] --- Paweł Kraszewski
 - 2021-01-15: [Ansible][18], materiały --- Łukasz Posadowski
+- 2022-07-01: [Jak z małego problemu zrobić duży kryzys - czyli o błędach w reagowaniu na incydenty IT][19], nagranie --- Gausus
 
 [1]: {static}/static/slideshows/org-mode/org-mode.html
 [2]: {static}/static/slideshows/org-mode/org-mode.org
@@ -39,3 +40,4 @@ praktyki. Wzorce i antywzorce. Przykłady wykorzystania][16] --- Kamil Zabielski
 [16]: https://github.com/lintops/ansible-sample-repository
 [17]: https://github.com/LinuX-lab/20180208-Rust
 [18]: https://repo.baszarek.pl/ansible/master/
+[19]: https://wiki.baszarek.pl/lib/exe/fetch.php?media=lxl_001.mp3
