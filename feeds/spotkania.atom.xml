@@ -3,7 +3,11 @@
 &lt;p&gt;Jutro (4.11.2022) o 17:30 kolejne spotkanie.  Ostatnie spotkanie
 organizacyjnie bardzo kulało, więc tematycznie będzie to co miało być
 w październiku.  Wybaczcie bardzo późną informację, mam nadzieję, że
-wszyscy chętni dadzą radę dotrzeć.&lt;/p&gt;</content><category term="Spotkania"></category></entry><entry><title>Październik 2022</title><link href="https://linuxlab.pw/2022/10/pazdziernik-2022.html" rel="alternate"></link><published>2022-10-10T14:10:00+02:00</published><updated>2022-10-10T14:10:00+02:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2022-10-10:/2022/10/pazdziernik-2022.html</id><content type="html">&lt;p&gt;Zapraszamy na spotkanie 14.10.2022 w Klubie przy ulicy Chmielnej 122.
+wszyscy chętni dadzą radę dotrzeć.&lt;/p&gt;
+&lt;h1&gt;Nagranie ze spotkania:&lt;/h1&gt;
+&lt;video width="720" height="480" controls preload=none&gt;
+  &lt;source src="https://linuxlab.pw/static/linuxlab-20221104.mp4" type="video/mp4"&gt;
+&lt;/video&gt;</content><category term="Spotkania"></category></entry><entry><title>Październik 2022</title><link href="https://linuxlab.pw/2022/10/pazdziernik-2022.html" rel="alternate"></link><published>2022-10-10T14:10:00+02:00</published><updated>2022-10-10T14:10:00+02:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2022-10-10:/2022/10/pazdziernik-2022.html</id><content type="html">&lt;p&gt;Zapraszamy na spotkanie 14.10.2022 w Klubie przy ulicy Chmielnej 122.
 W programie: produkcyjne wdrożenie routera z Freesco na maszynie
 Pentium 120 oraz reanimacja kilku starych serwerów. Wszystko będzie na
 miejscu, ale można zabrać narzędzia oraz płytki z SysRescueCD.
