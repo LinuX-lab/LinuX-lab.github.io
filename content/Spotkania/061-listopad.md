@@ -8,3 +8,9 @@ Jutro (4.11.2022) o 17:30 kolejne spotkanie.  Ostatnie spotkanie
 organizacyjnie bardzo kulało, więc tematycznie będzie to co miało być
 w październiku.  Wybaczcie bardzo późną informację, mam nadzieję, że
 wszyscy chętni dadzą radę dotrzeć.
+
+# Nagranie ze spotkania:
+
+<video width="720" height="480" controls preload=none>
+  <source src="{static}/static/linuxlab-20221104.mp4" type="video/mp4">
+</video>

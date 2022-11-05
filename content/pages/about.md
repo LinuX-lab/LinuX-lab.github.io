@@ -1,5 +1,22 @@
 Title: O nas
 
+Jesteśmy grupą entuzjastów wolnego i otwartego oprogramowania.
+Spotkania nie mają ściśle ustalonej struktury, traktujemy je jako
+okazję by spotkać się w gronie osób o wspólnych zainteresowaniach,
+wymienić się wiedzą czy rozwiązać wspólnie jakiś problem.
+
+Note to self: trzeba rozwinąć tę sekcję, bo obecnie są tu głównie
+dane archiwalne.  Sugestie mile widziane.
+
+<video width="720" height="480" controls preload=none>
+  <source src="{static}/static/linuxlab-20221104.mp4" type="video/mp4">
+</video>
+
+-------------------------------------------------------------------------------
+
+<details markdown>
+<summary>Informacje archiwalne / pre-COVID (kliknij by rozwinąć)</summary>
+
 *Linu.X-lab* (do 2015 znany jako *Linux w BRAMIE*) to odbywające się cyklicznie zwykle w każdy pierwszy* piątek miesiąca spotkania miłośników, fascynatów i wszystkich innych ludzi zainteresowanych Wolnym i Otwartym Oprogramowaniem. Podczas spotkań można porozmawiać oraz wymienić się wiedzą z innymi osobami, które dzielą razem z Tobą zainteresowanie tymi tematami.
 
 *) plus/minus tydzień
@@ -25,3 +42,5 @@ Zespół:
 
 - Wojciech 'vifon' Siewierski --- organizacja
 - mgr inż. Konrad Grochowski --- opiekun
+
+</details>
