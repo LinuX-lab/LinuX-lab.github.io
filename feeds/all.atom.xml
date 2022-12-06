@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Linu.X-lab</title><link href="https://linuxlab.pw/" rel="alternate"></link><link href="https://linuxlab.pw/feeds/all.atom.xml" rel="self"></link><id>https://linuxlab.pw/</id><updated>2022-11-03T17:30:00+01:00</updated><entry><title>Listopad 2022</title><link href="https://linuxlab.pw/2022/11/listopad-2022.html" rel="alternate"></link><published>2022-11-03T17:30:00+01:00</published><updated>2022-11-03T17:30:00+01:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2022-11-03:/2022/11/listopad-2022.html</id><content type="html">&lt;p&gt;Informacja last-minute:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Linu.X-lab</title><link href="https://linuxlab.pw/" rel="alternate"></link><link href="https://linuxlab.pw/feeds/all.atom.xml" rel="self"></link><id>https://linuxlab.pw/</id><updated>2022-12-06T23:56:00+01:00</updated><entry><title>Grudzień 2022</title><link href="https://linuxlab.pw/2022/12/grudzien-2022.html" rel="alternate"></link><published>2022-12-06T23:56:00+01:00</published><updated>2022-12-06T23:56:00+01:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2022-12-06:/2022/12/grudzien-2022.html</id><summary type="html">&lt;p&gt;W tym miesiącu widzimy się 9 grudnia o 17:30 &lt;strong&gt;w siedzibie
+&lt;a href="https://hackerspace.pl/"&gt;Warszawskiego Hackerspace&amp;rsquo;u&lt;/a&gt;&lt;/strong&gt; (podkreślam:
+&lt;strong&gt;nie tam gdzie ostatnio!&lt;/strong&gt;).  Adres to ul. Wolność 2A.&lt;/p&gt;
+&lt;p&gt;Co będziemy robić?  Stawiamy i odpalamy Peertube, czyli rozproszony
+system streamowania.  Jeżeli chcesz udostepniać filmy, ale nie masz na
+to zasobów, to coś dla Ciebie …&lt;/p&gt;</summary><content type="html">&lt;p&gt;W tym miesiącu widzimy się 9 grudnia o 17:30 &lt;strong&gt;w siedzibie
+&lt;a href="https://hackerspace.pl/"&gt;Warszawskiego Hackerspace&amp;rsquo;u&lt;/a&gt;&lt;/strong&gt; (podkreślam:
+&lt;strong&gt;nie tam gdzie ostatnio!&lt;/strong&gt;).  Adres to ul. Wolność 2A.&lt;/p&gt;
+&lt;p&gt;Co będziemy robić?  Stawiamy i odpalamy Peertube, czyli rozproszony
+system streamowania.  Jeżeli chcesz udostepniać filmy, ale nie masz na
+to zasobów, to coś dla Ciebie.  Łukasz Posadowski planuje
+zaprezentować jak podstawić swoją instancję Peertube i do czego może
+się ona przydać.&lt;/p&gt;
+&lt;p&gt;Do zobaczenia!&lt;/p&gt;</content><category term="Spotkania"></category></entry><entry><title>Listopad 2022</title><link href="https://linuxlab.pw/2022/11/listopad-2022.html" rel="alternate"></link><published>2022-11-03T17:30:00+01:00</published><updated>2022-11-03T17:30:00+01:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2022-11-03:/2022/11/listopad-2022.html</id><content type="html">&lt;p&gt;Informacja last-minute:&lt;/p&gt;
 &lt;p&gt;Jutro (4.11.2022) o 17:30 kolejne spotkanie.  Ostatnie spotkanie
 organizacyjnie bardzo kulało, więc tematycznie będzie to co miało być
 w październiku.  Wybaczcie bardzo późną informację, mam nadzieję, że
