@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Linu.X-lab</title><link href="https://linuxlab.pw/" rel="alternate"></link><link href="https://linuxlab.pw/feeds/all.atom.xml" rel="self"></link><id>https://linuxlab.pw/</id><updated>2022-12-06T23:56:00+01:00</updated><entry><title>Grudzień 2022</title><link href="https://linuxlab.pw/2022/12/grudzien-2022.html" rel="alternate"></link><published>2022-12-06T23:56:00+01:00</published><updated>2022-12-06T23:56:00+01:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2022-12-06:/2022/12/grudzien-2022.html</id><summary type="html">&lt;p&gt;W tym miesiącu widzimy się 9 grudnia o 17:30 &lt;strong&gt;w siedzibie
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Linu.X-lab</title><link href="https://linuxlab.pw/" rel="alternate"></link><link href="https://linuxlab.pw/feeds/all.atom.xml" rel="self"></link><id>https://linuxlab.pw/</id><updated>2024-01-08T18:30:00+01:00</updated><entry><title>Zakończenie spotkań</title><link href="https://linuxlab.pw/2024/01/zakonczenie-spotkan.html" rel="alternate"></link><published>2024-01-08T18:30:00+01:00</published><updated>2024-01-08T18:30:00+01:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2024-01-08:/2024/01/zakonczenie-spotkan.html</id><summary type="html">&lt;p&gt;Zgodnie z ogłoszeniem na liście mailingowej kilka miesięcy temu,
+spotkania należy uznać za zakończone.  Szczegóły podawałem już wtedy
+w mailu, ale w skrócie wynika to z problemów z utrzymaniem
+regularności spotkań w ostatnich latach.  Wrzucam ten wpis, żeby
+strona nie wisiała w stanie niejasnego limbo.&lt;/p&gt;
+&lt;p&gt;Do zobaczenia gdzieś tam kiedyś …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Zgodnie z ogłoszeniem na liście mailingowej kilka miesięcy temu,
+spotkania należy uznać za zakończone.  Szczegóły podawałem już wtedy
+w mailu, ale w skrócie wynika to z problemów z utrzymaniem
+regularności spotkań w ostatnich latach.  Wrzucam ten wpis, żeby
+strona nie wisiała w stanie niejasnego limbo.&lt;/p&gt;
+&lt;p&gt;Do zobaczenia gdzieś tam kiedyś tam!&lt;/p&gt;</content><category term="Ogłoszenia"></category></entry><entry><title>Grudzień 2022</title><link href="https://linuxlab.pw/2022/12/grudzien-2022.html" rel="alternate"></link><published>2022-12-06T23:56:00+01:00</published><updated>2022-12-06T23:56:00+01:00</updated><author><name>Wojciech 'vifon' Siewierski</name></author><id>tag:linuxlab.pw,2022-12-06:/2022/12/grudzien-2022.html</id><summary type="html">&lt;p&gt;W tym miesiącu widzimy się 9 grudnia o 17:30 &lt;strong&gt;w siedzibie
 &lt;a href="https://hackerspace.pl/"&gt;Warszawskiego Hackerspace&amp;rsquo;u&lt;/a&gt;&lt;/strong&gt; (podkreślam:
 &lt;strong&gt;nie tam gdzie ostatnio!&lt;/strong&gt;).  Adres to ul. Wolność 2A.&lt;/p&gt;
 &lt;p&gt;Co będziemy robić?  Stawiamy i odpalamy Peertube, czyli rozproszony
